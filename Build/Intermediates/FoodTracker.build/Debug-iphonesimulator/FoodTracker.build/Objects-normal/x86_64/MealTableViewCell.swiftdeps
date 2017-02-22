@@ -1,0 +1,309 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MealTableViewCell"
+provides-nominal:
+- "C11FoodTracker17MealTableViewCell"
+provides-member:
+- ["C11FoodTracker17MealTableViewCell", ""]
+provides-dynamic-lookup:
+- "setSelected"
+- "dateView"
+- "nameLabel"
+- "ratingControl"
+- "awakeFromNib"
+- "photoImageView"
+depends-top-level:
+- "UIImageView"
+- "UITableViewCell"
+- "MealTableViewCell"
+- "UILabel"
+- "RatingControl"
+- "Bool"
+depends-member:
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "dateView"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "nameLabel"]
+- ["Ps9AnyObject", "photoImageView"]
+- ["Ps9AnyObject", "ratingControl"]
+- ["Ps9AnyObject", "setSelected"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "awakeFromNib"]
+- ["PSo15CALayerDelegate", "dateView"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "nameLabel"]
+- ["PSo15CALayerDelegate", "photoImageView"]
+- ["PSo15CALayerDelegate", "ratingControl"]
+- ["PSo15CALayerDelegate", "setSelected"]
+- ["PSo15CALayerDelegate", ""]
+- ["Ps7CVarArg", "awakeFromNib"]
+- ["Ps7CVarArg", "dateView"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "nameLabel"]
+- ["Ps7CVarArg", "photoImageView"]
+- ["Ps7CVarArg", "ratingControl"]
+- ["Ps7CVarArg", "setSelected"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "dateView"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "nameLabel"]
+- ["Ps28CustomDebugStringConvertible", "photoImageView"]
+- ["Ps28CustomDebugStringConvertible", "ratingControl"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "dateView"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "nameLabel"]
+- ["Ps23CustomStringConvertible", "photoImageView"]
+- ["Ps23CustomStringConvertible", "ratingControl"]
+- ["Ps23CustomStringConvertible", "setSelected"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "dateView"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "nameLabel"]
+- ["Ps9Equatable", "photoImageView"]
+- ["Ps9Equatable", "ratingControl"]
+- ["Ps9Equatable", "setSelected"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "dateView"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "nameLabel"]
+- ["Ps8Hashable", "photoImageView"]
+- ["Ps8Hashable", "ratingControl"]
+- ["Ps8Hashable", "setSelected"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["C11FoodTracker17MealTableViewCell", "Bool"]
+- ["C11FoodTracker17MealTableViewCell", "RatingControl"]
+- ["C11FoodTracker17MealTableViewCell", "UIImageView"]
+- ["C11FoodTracker17MealTableViewCell", "UILabel"]
+- ["C11FoodTracker17MealTableViewCell", "awakeFromNib"]
+- ["C11FoodTracker17MealTableViewCell", "dateView"]
+- ["C11FoodTracker17MealTableViewCell", "deinit"]
+- ["C11FoodTracker17MealTableViewCell", "init"]
+- ["C11FoodTracker17MealTableViewCell", "nameLabel"]
+- ["C11FoodTracker17MealTableViewCell", "photoImageView"]
+- ["C11FoodTracker17MealTableViewCell", "ratingControl"]
+- ["C11FoodTracker17MealTableViewCell", "setSelected"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "dateView"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "nameLabel"]
+- ["PSo8NSCoding", "photoImageView"]
+- ["PSo8NSCoding", "ratingControl"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "RatingControl"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "dateView"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "nameLabel"]
+- ["CSo8NSObject", "photoImageView"]
+- ["CSo8NSObject", "ratingControl"]
+- ["CSo8NSObject", "setSelected"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "dateView"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "nameLabel"]
+- ["PSo16NSObjectProtocol", "photoImageView"]
+- ["PSo16NSObjectProtocol", "ratingControl"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "dateView"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "nameLabel"]
+- ["PSo29UIAccessibilityIdentification", "photoImageView"]
+- ["PSo29UIAccessibilityIdentification", "ratingControl"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "dateView"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "nameLabel"]
+- ["PSo12UIAppearance", "photoImageView"]
+- ["PSo12UIAppearance", "ratingControl"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "dateView"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "nameLabel"]
+- ["PSo21UIAppearanceContainer", "photoImageView"]
+- ["PSo21UIAppearanceContainer", "ratingControl"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "dateView"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "nameLabel"]
+- ["PSo17UICoordinateSpace", "photoImageView"]
+- ["PSo17UICoordinateSpace", "ratingControl"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "dateView"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "nameLabel"]
+- ["PSo13UIDynamicItem", "photoImageView"]
+- ["PSo13UIDynamicItem", "ratingControl"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "dateView"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "nameLabel"]
+- ["PSo18UIFocusEnvironment", "photoImageView"]
+- ["PSo18UIFocusEnvironment", "ratingControl"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo11UIFocusItem", "awakeFromNib"]
+- ["PSo11UIFocusItem", "dateView"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "nameLabel"]
+- ["PSo11UIFocusItem", "photoImageView"]
+- ["PSo11UIFocusItem", "ratingControl"]
+- ["PSo11UIFocusItem", "setSelected"]
+- ["PSo11UIFocusItem", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "dateView"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "nameLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "photoImageView"]
+- ["PSo27UIGestureRecognizerDelegate", "ratingControl"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "RatingControl"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "dateView"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "nameLabel"]
+- ["CSo11UIResponder", "photoImageView"]
+- ["CSo11UIResponder", "ratingControl"]
+- ["CSo11UIResponder", "setSelected"]
+- ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
+- ["PSo30UIResponderStandardEditActions", "dateView"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "nameLabel"]
+- ["PSo30UIResponderStandardEditActions", "photoImageView"]
+- ["PSo30UIResponderStandardEditActions", "ratingControl"]
+- ["PSo30UIResponderStandardEditActions", "setSelected"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "RatingControl"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "dateView"]
+- ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "nameLabel"]
+- ["CSo15UITableViewCell", "photoImageView"]
+- ["CSo15UITableViewCell", "ratingControl"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", ""]
+- ["OSC20UITableViewCellStyle", "deinit"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "dateView"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "nameLabel"]
+- ["PSo18UITraitEnvironment", "photoImageView"]
+- ["PSo18UITraitEnvironment", "ratingControl"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "RatingControl"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "dateView"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "nameLabel"]
+- ["CSo6UIView", "photoImageView"]
+- ["CSo6UIView", "ratingControl"]
+- ["CSo6UIView", "setSelected"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "dateView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "nameLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "photoImageView"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "ratingControl"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- ["Ps9_Hashable", "awakeFromNib"]
+- ["Ps9_Hashable", "dateView"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "nameLabel"]
+- ["Ps9_Hashable", "photoImageView"]
+- ["Ps9_Hashable", "ratingControl"]
+- ["Ps9_Hashable", "setSelected"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "C11FoodTracker17MealTableViewCell"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "CSo15UITableViewCell"
+- "OSC20UITableViewCellStyle"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+interface-hash: "86454e1e6cbc47534974908a4bc442b0"

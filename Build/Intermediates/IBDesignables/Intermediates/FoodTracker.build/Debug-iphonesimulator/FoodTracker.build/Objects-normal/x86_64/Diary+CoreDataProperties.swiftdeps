@@ -1,0 +1,218 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C11FoodTracker5Diary", ""]
+- ["C11FoodTracker5Diary", "fetchRequest"]
+- ["C11FoodTracker5Diary", "coffeeName"]
+- ["C11FoodTracker5Diary", "date"]
+- ["C11FoodTracker5Diary", "img"]
+- ["C11FoodTracker5Diary", "rating"]
+- ["C11FoodTracker5Diary", "studyTime"]
+provides-dynamic-lookup:
+- "rating"
+- "coffeeName"
+- "img"
+- "date"
+- "studyTime"
+depends-top-level:
+- "Diary"
+- "NSFetchRequest"
+- !private "StringLiteralType"
+- "Int16"
+- "String"
+- "NSDate"
+depends-member:
+- !private ["Ps9AnyObject", "NSFetchRequest"]
+- ["Ps9AnyObject", "coffeeName"]
+- ["Ps9AnyObject", "date"]
+- ["Ps9AnyObject", "fetchRequest"]
+- ["Ps9AnyObject", "img"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "rating"]
+- ["Ps9AnyObject", "studyTime"]
+- !private ["Ps7CVarArg", "NSFetchRequest"]
+- ["Ps7CVarArg", "coffeeName"]
+- ["Ps7CVarArg", "date"]
+- ["Ps7CVarArg", "fetchRequest"]
+- ["Ps7CVarArg", "img"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "rating"]
+- ["Ps7CVarArg", "studyTime"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
+- ["Ps28CustomDebugStringConvertible", "coffeeName"]
+- ["Ps28CustomDebugStringConvertible", "date"]
+- ["Ps28CustomDebugStringConvertible", "fetchRequest"]
+- ["Ps28CustomDebugStringConvertible", "img"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "rating"]
+- ["Ps28CustomDebugStringConvertible", "studyTime"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
+- ["Ps23CustomStringConvertible", "coffeeName"]
+- ["Ps23CustomStringConvertible", "date"]
+- ["Ps23CustomStringConvertible", "fetchRequest"]
+- ["Ps23CustomStringConvertible", "img"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "rating"]
+- ["Ps23CustomStringConvertible", "studyTime"]
+- ["C11FoodTracker5Diary", "Diary"]
+- ["C11FoodTracker5Diary", "Int16"]
+- ["C11FoodTracker5Diary", "NSDate"]
+- ["C11FoodTracker5Diary", "NSFetchRequest"]
+- ["C11FoodTracker5Diary", "String"]
+- ["C11FoodTracker5Diary", "coffeeName"]
+- ["C11FoodTracker5Diary", "date"]
+- ["C11FoodTracker5Diary", "deinit"]
+- ["C11FoodTracker5Diary", "fetchRequest"]
+- ["C11FoodTracker5Diary", "img"]
+- ["C11FoodTracker5Diary", "rating"]
+- ["C11FoodTracker5Diary", "studyTime"]
+- !private ["Ps9Equatable", "NSFetchRequest"]
+- ["Ps9Equatable", "coffeeName"]
+- ["Ps9Equatable", "date"]
+- ["Ps9Equatable", "fetchRequest"]
+- ["Ps9Equatable", "img"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "rating"]
+- ["Ps9Equatable", "studyTime"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NSFetchRequest"]
+- ["Ps8Hashable", "coffeeName"]
+- ["Ps8Hashable", "date"]
+- ["Ps8Hashable", "fetchRequest"]
+- ["Ps8Hashable", "img"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "rating"]
+- ["Ps8Hashable", "studyTime"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- ["CSo14NSFetchRequest", "deinit"]
+- !private ["CSo14NSFetchRequest", "init"]
+- !private ["PSo20NSFetchRequestResult", "NSFetchRequest"]
+- ["PSo20NSFetchRequestResult", "coffeeName"]
+- ["PSo20NSFetchRequestResult", "date"]
+- ["PSo20NSFetchRequestResult", "fetchRequest"]
+- ["PSo20NSFetchRequestResult", "img"]
+- ["PSo20NSFetchRequestResult", "rating"]
+- ["PSo20NSFetchRequestResult", "studyTime"]
+- ["CSo15NSManagedObject", "Diary"]
+- ["CSo15NSManagedObject", "Int16"]
+- ["CSo15NSManagedObject", "NSDate"]
+- ["CSo15NSManagedObject", "NSFetchRequest"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "coffeeName"]
+- ["CSo15NSManagedObject", "date"]
+- ["CSo15NSManagedObject", "fetchRequest"]
+- ["CSo15NSManagedObject", "img"]
+- ["CSo15NSManagedObject", "rating"]
+- ["CSo15NSManagedObject", "studyTime"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Diary"]
+- ["CSo8NSObject", "Int16"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSFetchRequest"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "coffeeName"]
+- ["CSo8NSObject", "date"]
+- ["CSo8NSObject", "fetchRequest"]
+- ["CSo8NSObject", "img"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "rating"]
+- ["CSo8NSObject", "studyTime"]
+- !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
+- ["PSo16NSObjectProtocol", "coffeeName"]
+- ["PSo16NSObjectProtocol", "date"]
+- ["PSo16NSObjectProtocol", "fetchRequest"]
+- ["PSo16NSObjectProtocol", "img"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "rating"]
+- ["PSo16NSObjectProtocol", "studyTime"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "NSFetchRequest"]
+- ["Ps9_Hashable", "coffeeName"]
+- ["Ps9_Hashable", "date"]
+- ["Ps9_Hashable", "fetchRequest"]
+- ["Ps9_Hashable", "img"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "rating"]
+- ["Ps9_Hashable", "studyTime"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C11FoodTracker5Diary"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo14NSFetchRequest"
+- "PSo20NSFetchRequestResult"
+- "CSo15NSManagedObject"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+interface-hash: "2b9ed4a5f2b6e400d775399a23388cd2"

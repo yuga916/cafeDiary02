@@ -1,0 +1,18 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "48d2f785026fd84affce760dbf4f4856"
+build_time: [541047136, 604231000]
+inputs:
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/DateManager.swift": [540820626, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/listViewController.swift": [541002419, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/Meal.swift": [540820626, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/imageViewController.swift": [540978472, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/MealViewController.swift": [541046331, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/imageCollectionViewCell.swift": [540820626, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/RatingControl.swift": [540820626, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/AppDelegate.swift": [541000744, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/MealTableViewController.swift": [541047135, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/MealTableViewCell.swift": [540820626, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/calendarViewController.swift": [541046649, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/FoodTracker/CalendarCell.swift": [540999691, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Diary+CoreDataProperties.swift": [540820626, 0]
+  "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Diary+CoreDataClass.swift": [540820626, 0]
