@@ -236,6 +236,7 @@ SWIFT_CLASS("_TtC11FoodTracker23MealTableViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)viewWillAppear:(BOOL)animated;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -379,15 +380,18 @@ SWIFT_CLASS("_TtC11FoodTracker18listViewController")
 @property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
 @property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified myTableView;
 @property (nonatomic, copy) NSString * _Null_unspecified selectedImageURL;
 @property (nonatomic, copy) NSString * _Null_unspecified selectedName;
 @property (nonatomic, copy) NSDate * _Null_unspecified selectedDate;
 - (void)viewDidLoad;
 - (void)read;
+- (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

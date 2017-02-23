@@ -96,6 +96,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3TY-nf-beK"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="myTableView" destination="863-9j-3gL" id="yMn-m1-Zpt"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showSecondView" id="R3V-zN-fF3"/>
                     </connections>
                 </viewController>

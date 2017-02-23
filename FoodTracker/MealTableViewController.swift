@@ -135,10 +135,11 @@ class MealTableViewController: UITableViewController {
         return cell
     }
     
+    //こっちは表示されるたびに出力される
+    override func viewWillAppear(_ animated: Bool) {
+        read()
+    }
     
-    
-    
-
     
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

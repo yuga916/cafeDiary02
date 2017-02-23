@@ -222,45 +222,119 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
 
 
+//    //データの保存
+//    func tapSave(_ sender: UIBarButtonItem) {
+//        //　AppDelegateを使う用意をしておく
+//        let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//        
+//        //エンティティを操作するためのオブジェクトを作成
+//        //DB接続をするのと同じ
+//        let viewContext = appDelegate.persistentContainer.viewContext
+//        
+//        //ToDoエンティティオブジェクトを作成
+//        let ToDo = NSEntityDescription.entity(forEntityName: "Diary", in: viewContext)
+//        
+//        //ToDoエンティティにレコード（行)を挿入するためのオブジェクトを作成
+//        let newRecord = NSManagedObject(entity: ToDo!, insertInto: viewContext)
+//        
+//        //値のセット
+//        newRecord.setValue(nameTextField.text ?? String(), forKey: "coffeeName")
+//        newRecord.setValue(scSelectedDate, forKey: "date")
+//        newRecord.setValue(num, forKey: "studyTime")
+//        newRecord.setValue(strURL, forKey: "img")
+//        newRecord.setValue(ratingControl.rating, forKey: "rating")
+//        
+//        
+//        
+//        
+//        
+//        //例外処理
+//        do{
+//            //レコード（行）の即時保存
+//            try viewContext.save()
+//            
+//            //前の画面に戻る
+//            navigationController?.popViewController(animated: true)
+//        } catch {
+//        }
+//        
+//        
+//    }
+    
     //データの保存
-    func tapSave(_ sender: UIBarButtonItem) {
-        //　AppDelegateを使う用意をしておく
-        let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+   func tapSave(_ sender: UIBarButtonItem) {
+    //AppDelegateを使う用意をする
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    //エンティティを操作するためのオブジェクトを作成
+    let viewContext = appDelegate.persistentContainer.viewContext
+    
+    //どのエンティティからdataを取得してくるか設定
+    let query:NSFetchRequest<Diary> = Diary.fetchRequest()
+    
+    do{
+        //データを一括取得
+        //データを一括取得
+        //            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "date")
+        query.predicate = NSPredicate(format:"date = %@", scSelectedDate)
+        let fetchResults = try! viewContext.fetch(query)
         
-        //エンティティを操作するためのオブジェクトを作成
-        //DB接続をするのと同じ
-        let viewContext = appDelegate.persistentContainer.viewContext
+        print(fetchResults.count)
         
-        //ToDoエンティティオブジェクトを作成
-        let ToDo = NSEntityDescription.entity(forEntityName: "Diary", in: viewContext)
-        
-        //ToDoエンティティにレコード（行)を挿入するためのオブジェクトを作成
-        let newRecord = NSManagedObject(entity: ToDo!, insertInto: viewContext)
-        
-        //値のセット
-        newRecord.setValue(nameTextField.text ?? String(), forKey: "coffeeName")
-        newRecord.setValue(scSelectedDate, forKey: "date")
-        newRecord.setValue(num, forKey: "studyTime")
-        newRecord.setValue(strURL, forKey: "img")
-        newRecord.setValue(ratingControl.rating, forKey: "rating")
-        
-        
-        
-        
-        
-        //例外処理
-        do{
-            //レコード（行）の即時保存
-            try viewContext.save()
+        if fetchResults.count == 0 {
+            //ToDoエンティティオブジェクトを作成
+            let ToDo = NSEntityDescription.entity(forEntityName: "Diary", in: viewContext)
             
-            //前の画面に戻る
-            navigationController?.popViewController(animated: true)
-        } catch {
+            //ToDoエンティティにレコード（行)を挿入するためのオブジェクトを作成
+            let newRecord = NSManagedObject(entity: ToDo!, insertInto: viewContext)
+            
+            //値のセット
+            newRecord.setValue(nameTextField.text ?? String(), forKey: "coffeeName")
+            newRecord.setValue(scSelectedDate, forKey: "date")
+            newRecord.setValue(num, forKey: "studyTime")
+            newRecord.setValue(strURL, forKey: "img")
+            newRecord.setValue(ratingControl.rating, forKey: "rating")
+            //例外処理
+            do{
+                //レコード（行）の即時保存
+                try viewContext.save()
+                
+                //前の画面に戻る
+                navigationController?.popViewController(animated: true)
+            } catch {
+            }
+        
+            
+        } else {
+        
+        
+            
+        //nilが入るかもしれないのでasに?をつける。
+        for result: AnyObject in fetchResults {
+            
+                    result.setValue(nameTextField.text ?? String(), forKey: "coffeeName")
+                    result.setValue(scSelectedDate, forKey: "date")
+                    result.setValue(num, forKey: "studyTime")
+                    result.setValue(strURL, forKey: "img")
+                    result.setValue(ratingControl.rating, forKey: "rating")
+            
+            
         }
-        
-        
+                do{
+                    //レコード（行）の即時保存
+                    try viewContext.save()
+                    
+                    //前の画面に戻る
+                    navigationController?.popViewController(animated: true)
+    } catch {
     }
     
+    //TableViewの再描画
+    //        myTableView.reloadData()
+    }
+    }
+    }
+
     //移動画面からの戻り口
     @IBAction func returnMenu(_ segue:UIStoryboardSegue){
         

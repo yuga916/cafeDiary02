@@ -6,55 +6,56 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker23MealTableViewController", ""]
 provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
 - "cafeArray"
-- "numberOfSections"
-- "myCafe"
+- "selectedDate"
 - "selectedImageURL"
 - "read"
+- "tableView"
+- "tableView"
+- "tableView"
 - "cafeDic"
-- "viewDidLoad"
 - "selectedName"
-- "didReceiveMemoryWarning"
-- "selectedDate"
-- "tableView"
-- "tableView"
-- "tableView"
+- "viewDidLoad"
+- "numberOfSections"
+- "myCafe"
+- "viewWillAppear"
 depends-top-level:
-- !private "CGSize"
-- !private "AppDelegate"
-- "NSDictionary"
-- "Int"
-- !private "NSString"
-- !private "Void"
-- !private "UIApplication"
-- !private "PHAsset"
-- !private "PHFetchResult"
-- !private "NSSortDescriptor"
-- !private "Diary"
-- "UITableView"
-- "Bool"
-- "NSArray"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- "UITableViewController"
-- !private "=="
-- !private "NSFetchRequest"
-- "UITableViewCell"
-- "Dictionary"
-- !private "StringLiteralType"
-- !private "MealTableViewCell"
-- "IndexPath"
-- !private "UIImage"
-- !private "PHImageManager"
-- "Date"
-- !private "NSNumber"
-- !private "Array"
-- !private "AnyObject"
 - "MealTableViewController"
+- "IndexPath"
+- !private "MealTableViewCell"
+- !private "AnyObject"
+- !private "AppDelegate"
+- !private "=="
 - "String"
-- !private "print"
+- "UITableView"
+- !private "NSString"
+- !private "StringLiteralType"
+- !private "PHFetchResult"
+- "Bool"
+- !private "PHAsset"
+- !private "Void"
 - !private "BooleanLiteralType"
+- !private "Diary"
+- !private "NSFetchRequest"
+- !private "NSSortDescriptor"
+- !private "UIImage"
+- !private "CGSize"
+- "Int"
+- "Date"
+- !private "UIApplication"
+- "NSArray"
+- "UITableViewController"
+- "UITableViewCell"
+- !private "NSNumber"
+- "Dictionary"
+- !private "Array"
+- !private "PHImageManager"
 - !private "URL"
+- "CastingPrecedence"
+- !private "print"
+- "NSDictionary"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "Diary"]
@@ -102,6 +103,7 @@ depends-member:
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "viewContext"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
 - ["C11FoodTracker11AppDelegate", "deinit"]
 - !private ["C11FoodTracker11AppDelegate", "persistentContainer"]
@@ -213,6 +215,7 @@ depends-member:
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "viewContext"]
 - ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps10Collection", "Element"]
@@ -284,6 +287,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "viewContext"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
@@ -365,6 +369,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "viewContext"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
 - ["V10Foundation4Date", "deinit"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
@@ -430,6 +435,7 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "viewContext"]
 - ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
@@ -506,6 +512,7 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "viewContext"]
 - ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["V10Foundation9IndexPath", "deinit"]
@@ -597,6 +604,7 @@ depends-member:
 - ["C11FoodTracker23MealTableViewController", "selectedRating"]
 - ["C11FoodTracker23MealTableViewController", "tableView"]
 - ["C11FoodTracker23MealTableViewController", "viewDidLoad"]
+- ["C11FoodTracker23MealTableViewController", "viewWillAppear"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
@@ -661,6 +669,7 @@ depends-member:
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "Key"]
 - ["PSo9NSCopying", "Value"]
@@ -698,6 +707,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "selectedRating"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["PSo17NSFastEnumeration", "Key"]
 - ["PSo17NSFastEnumeration", "Value"]
@@ -779,6 +789,7 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "viewContext"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
 - !private ["PSo16NSObjectProtocol", "Diary"]
 - !private ["PSo16NSObjectProtocol", "Int"]
@@ -823,6 +834,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "viewContext"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo21NSPersistentContainer", "viewContext"]
 - ["PSo14NSSecureCoding", "Key"]
@@ -976,6 +988,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo13UIApplication", "deinit"]
 - !private ["CSo13UIApplication", "delegate"]
@@ -1005,6 +1018,7 @@ depends-member:
 - ["PSo18UIContentContainer", "selectedRating"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
@@ -1052,6 +1066,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
 - !private ["PSo11UIFocusItem", "image"]
@@ -1115,6 +1130,7 @@ depends-member:
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
 - !private ["PSo30UIResponderStandardEditActions", "Diary"]
 - !private ["PSo30UIResponderStandardEditActions", "Int"]
@@ -1149,6 +1165,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
@@ -1175,6 +1192,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "selectedRating"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", "viewWillAppear"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["CSo11UIStackView", "rating"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
@@ -1201,6 +1219,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "selectedRating"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
@@ -1247,6 +1266,7 @@ depends-member:
 - ["CSo21UITableViewController", "selectedRating"]
 - ["CSo21UITableViewController", "tableView"]
 - ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", "viewWillAppear"]
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "CGSize"]
 - !private ["PSo21UITableViewDataSource", "Diary"]
@@ -1272,6 +1292,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "selectedRating"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", "viewWillAppear"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "CGSize"]
 - !private ["PSo19UITableViewDelegate", "Diary"]
@@ -1297,6 +1318,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "selectedRating"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", "viewWillAppear"]
 - ["PSo19UITableViewDelegate", ""]
 - ["OSC16UITableViewStyle", "deinit"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
@@ -1330,6 +1352,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dequeueReusableCell"]
 - !private ["CSo6UIView", "image"]
@@ -1377,6 +1400,7 @@ depends-member:
 - ["CSo16UIViewController", "selectedRating"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
@@ -1472,6 +1496,7 @@ depends-member:
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "viewContext"]
 - ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
@@ -1686,4 +1711,4 @@ depends-external:
 - "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "58cd363ff16ad821ea160a9dc4b98b6f"
+interface-hash: "28050d80d0133c5580aa27064d842d5f"

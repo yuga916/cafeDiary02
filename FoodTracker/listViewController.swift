@@ -18,6 +18,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var cafeDic: NSDictionary! = [:]
     var myCafe = NSArray() as! [String]
     
+    @IBOutlet weak var myTableView: UITableView!
     
     
     var selectedImageURL: String!
@@ -72,15 +73,17 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         } catch {
         }
         //TableViewの再描画
-        //        myTableView.reloadData()
+                myTableView.reloadData()
         //配列は降順になっているから、昇順にする
         let sortDescription = NSSortDescriptor(key: "rating", ascending: false)
         let sortDescArray = [sortDescription]
         self.cafeArray = ((self.cafeArray as NSArray).sortedArray(using: sortDescArray) as NSArray) as! [NSDictionary]
     }
     
-    //データの削除処理
-    
+    //こっちは表示されるたびに出力される
+    override func viewWillAppear(_ animated: Bool) {
+        read()
+    }
     
     
     //MARK: - Table view data source
@@ -130,16 +133,16 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row)行目")
         var cafeRow = cafeArray[indexPath.row] as! NSDictionary
-        var selectedDate = cafeRow["date"] as! NSDate
+        var selectedDateTmp = cafeRow["date"] as! NSDate
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
-        let selectDateTmp = formatter.string(from: selectedDate as Date)
+        let selectDateTmp = formatter.string(from: selectedDateTmp as Date)
         
         
         formatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
-        selectedDate = formatter.date(from: selectDateTmp) as! NSDate
+        selectedDate = (formatter.date(from: selectDateTmp) as! NSDate) as Date!
         
-    
+        print(selectedDate)
         
         
         //        セグエを通して画面遷移する
@@ -154,7 +157,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //次の画面のオブジェクトを作成
         //destinationはAny型なので変換
         let secondVC = segue.destination as! MealViewController
-        
+        print(selectedDate)
         //選択されたkeyNameを次の画面のプロパティに保存
         secondVC.scSelectedDate = selectedDate as NSDate
         print("日付\(secondVC.scSelectedDate)を次の画面へ渡す")
