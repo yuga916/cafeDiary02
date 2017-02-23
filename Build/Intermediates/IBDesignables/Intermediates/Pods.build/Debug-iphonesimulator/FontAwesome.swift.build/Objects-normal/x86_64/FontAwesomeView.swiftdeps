@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C17FontAwesome_swift15FontAwesomeView", ""]
 provides-dynamic-lookup:
-- "iconCode"
 - "prepareForInterfaceBuilder"
-- "setupViews"
-- "tintColorDidChange"
 - "layoutSubviews"
+- "tintColorDidChange"
+- "setupViews"
+- "iconCode"
 depends-top-level:
-- "StringLiteralType"
-- !private "NSTextAlignment"
-- "NSCoder"
-- "UIView"
-- !private "CGSize"
-- !private "<"
-- "CGRect"
-- !private "BooleanLiteralType"
-- "String"
-- "UILabel"
-- !private "CGPoint"
-- "TernaryPrecedence"
-- "FontAwesomeView"
 - !private "UIFont"
+- "StringLiteralType"
+- "String"
+- "FontAwesomeView"
+- "NSCoder"
+- !private "CGPoint"
+- !private "BooleanLiteralType"
+- !private "CGSize"
+- "UIView"
+- "UILabel"
+- !private "<"
+- "TernaryPrecedence"
+- "CGRect"
 - "AssignmentPrecedence"
+- !private "NSTextAlignment"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRect"]
@@ -793,8 +793,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/Target Support Files/FontAwesome.swift/FontAwesome.swift-umbrella.h"
-- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/unextended-module.modulemap"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/Target Support Files/FontAwesome.swift/FontAwesome.swift-umbrella.h"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/unextended-module.modulemap"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"

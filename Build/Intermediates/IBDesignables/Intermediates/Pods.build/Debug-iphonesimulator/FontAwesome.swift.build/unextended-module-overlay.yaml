@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules'
+    'name': '/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/unextended-module.modulemap',
+      'external-contents': '/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/unextended-module.modulemap',
     }]
   }]
 }

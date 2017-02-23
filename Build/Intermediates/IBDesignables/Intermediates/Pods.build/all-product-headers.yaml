@@ -4,55 +4,55 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers",
+      'name': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FontAwesome.swift-umbrella.h",
-          'external-contents': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/Target Support Files/FontAwesome.swift/FontAwesome.swift-umbrella.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/Target Support Files/FontAwesome.swift/FontAwesome.swift-umbrella.h"
         },
         {
           'type': 'file',
           'name': "FontAwesome_swift-Swift.h",
-          'external-contents': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules",
+      'name': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/module.modulemap"
+          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers",
+      'name': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Pods-FoodTracker-umbrella.h",
-          'external-contents': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-umbrella.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-umbrella.h"
         },
         {
           'type': 'file',
           'name': "Pods_FoodTracker-Swift.h",
-          'external-contents': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers/Pods_FoodTracker-Swift.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers/Pods_FoodTracker-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Modules",
+      'name': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Pods-FoodTracker.build/module.modulemap"
+          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Pods-FoodTracker.build/module.modulemap"
         }
       ]
     }

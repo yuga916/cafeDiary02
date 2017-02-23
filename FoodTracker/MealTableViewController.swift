@@ -135,18 +135,7 @@ class MealTableViewController: UITableViewController {
         return cell
     }
     
-    //行が選択された時に発動
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row)行目")
-        var cafeRow = cafeArray[indexPath.row] as! NSDictionary
-        
-        
-        
-        //        セグエを通して画面遷移する
-        //        →セグエを選択して、identifierに"showSecondView"を指定する
-        performSegue(withIdentifier: "showSecondView", sender: nil)
-        
-    }
+    
     
     
 

@@ -95,6 +95,9 @@
                     <navigationItem key="navigationItem" title="Your Cafe" id="eE7-dq-hv0">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3TY-nf-beK"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showSecondView" id="R3V-zN-fF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTQ-y5-3PF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -512,5 +515,8 @@
         <image name="calendar" width="30" height="30"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R3V-zN-fF3"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

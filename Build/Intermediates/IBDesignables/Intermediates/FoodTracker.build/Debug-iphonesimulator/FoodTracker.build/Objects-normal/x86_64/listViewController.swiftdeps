@@ -6,59 +6,60 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18listViewController", ""]
 provides-dynamic-lookup:
-- "selectedName"
 - "numberOfSections"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "selectedDate"
 - "cafeArray"
+- "selectedDate"
 - "myCafe"
 - "read"
-- "tableView"
-- "tableView"
-- "tableView"
 - "cafeDic"
 - "selectedImageURL"
+- "selectedName"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "URL"
-- !private "PHFetchResult"
-- !private "Void"
-- !private "AppDelegate"
-- "UITableView"
-- "NSArray"
 - !private "BooleanLiteralType"
-- "UIViewController"
-- !private "UIColor"
-- !private "PHAsset"
-- !private "StringLiteralType"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- "Bool"
-- !private "NSFetchRequest"
-- !private "Array"
-- "NSDictionary"
-- !private "UIImage"
-- !private "MealTableViewCell"
+- "UITableView"
+- !private "Void"
 - !private "UIApplication"
+- "UITableViewDataSource"
+- !private "AppDelegate"
+- !private "PHAsset"
+- "UITableViewDelegate"
+- !private "PHFetchResult"
+- "CastingPrecedence"
+- "Date"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "UIColor"
+- !private "NSFetchRequest"
 - !private "Diary"
 - !private "CGSize"
-- "Dictionary"
-- "AssignmentPrecedence"
-- !private "NSForegroundColorAttributeName"
-- !private "AnyObject"
-- !private "PHImageManager"
-- !private "NSString"
-- "CastingPrecedence"
-- !private "=="
-- "Int"
-- "IndexPath"
-- "Date"
-- "UITableViewCell"
+- !private "Array"
+- "UIViewController"
 - !private "NSSortDescriptor"
-- !private "NSNumber"
-- "String"
-- !private "print"
+- !private "StringLiteralType"
 - "listViewController"
+- !private "MealTableViewCell"
+- "NSDictionary"
+- !private "NSForegroundColorAttributeName"
+- !private "URL"
+- "Int"
+- !private "UIImage"
+- "Dictionary"
+- !private "PHImageManager"
+- "IndexPath"
+- !private "=="
+- "UITableViewCell"
+- "String"
+- !private "NSNumber"
+- !private "print"
+- !private "AnyObject"
+- !private "NSString"
+- "NSArray"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "Diary"]
@@ -94,6 +95,7 @@ depends-member:
 - !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "performSegue"]
 - !private ["Ps9AnyObject", "persistentContainer"]
 - !private ["Ps9AnyObject", "photoImageView"]
 - !private ["Ps9AnyObject", "print"]
@@ -232,6 +234,7 @@ depends-member:
 - !private ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- !private ["Ps7CVarArg", "performSegue"]
 - !private ["Ps7CVarArg", "persistentContainer"]
 - !private ["Ps7CVarArg", "photoImageView"]
 - !private ["Ps7CVarArg", "print"]
@@ -329,6 +332,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "persistentContainer"]
 - !private ["Ps28CustomDebugStringConvertible", "photoImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -435,6 +439,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "performSegue"]
 - !private ["Ps23CustomStringConvertible", "persistentContainer"]
 - !private ["Ps23CustomStringConvertible", "photoImageView"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -528,6 +533,7 @@ depends-member:
 - !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "performSegue"]
 - !private ["Ps9Equatable", "persistentContainer"]
 - !private ["Ps9Equatable", "photoImageView"]
 - !private ["Ps9Equatable", "print"]
@@ -629,6 +635,7 @@ depends-member:
 - !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "performSegue"]
 - !private ["Ps8Hashable", "persistentContainer"]
 - !private ["Ps8Hashable", "photoImageView"]
 - !private ["Ps8Hashable", "print"]
@@ -778,6 +785,7 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "performSegue"]
 - !private ["PSo8NSCoding", "photoImageView"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rating"]
@@ -847,6 +855,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "read"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
@@ -941,6 +950,7 @@ depends-member:
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "performSegue"]
 - !private ["CSo8NSObject", "persistentContainer"]
 - !private ["CSo8NSObject", "photoImageView"]
 - !private ["CSo8NSObject", "print"]
@@ -1010,6 +1020,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "performSegue"]
 - !private ["PSo16NSObjectProtocol", "persistentContainer"]
 - !private ["PSo16NSObjectProtocol", "photoImageView"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -1197,6 +1208,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "performSegue"]
 - !private ["PSo21UIAppearanceContainer", "photoImageView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "rating"]
@@ -1257,6 +1269,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "performSegue"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "read"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
@@ -1325,6 +1338,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "performSegue"]
 - !private ["PSo18UIFocusEnvironment", "photoImageView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "rating"]
@@ -1415,6 +1429,7 @@ depends-member:
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "performSegue"]
 - !private ["CSo11UIResponder", "persistentContainer"]
 - !private ["CSo11UIResponder", "photoImageView"]
 - !private ["CSo11UIResponder", "print"]
@@ -1473,6 +1488,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - !private ["PSo30UIResponderStandardEditActions", "persistentContainer"]
 - !private ["PSo30UIResponderStandardEditActions", "photoImageView"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
@@ -1526,6 +1542,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "performSegue"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "read"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1570,6 +1587,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "performSegue"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "read"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
@@ -1620,6 +1638,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "performSegue"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "read"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
@@ -1660,6 +1679,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "performSegue"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "read"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1706,6 +1726,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "performSegue"]
 - !private ["PSo18UITraitEnvironment", "photoImageView"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "rating"]
@@ -1783,6 +1804,7 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "performSegue"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "read"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
@@ -1893,6 +1915,7 @@ depends-member:
 - !private ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps9_Hashable", "performSegue"]
 - !private ["Ps9_Hashable", "persistentContainer"]
 - !private ["Ps9_Hashable", "photoImageView"]
 - !private ["Ps9_Hashable", "print"]
@@ -2007,6 +2030,7 @@ depends-member:
 - !private ["C11FoodTracker18listViewController", "navigationController"]
 - ["C11FoodTracker18listViewController", "numberOfSections"]
 - ["C11FoodTracker18listViewController", "numberOfSectionsInTableView"]
+- !private ["C11FoodTracker18listViewController", "performSegue"]
 - !private ["C11FoodTracker18listViewController", "print"]
 - ["C11FoodTracker18listViewController", "read"]
 - ["C11FoodTracker18listViewController", "scrollViewDidEndDecelerating"]
@@ -2208,8 +2232,8 @@ depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
-- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
-- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
-- "/Users/yuga/Downloads/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "d802c789c95cb8c9a7e9f1cf4d8b4614"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+interface-hash: "0aa8f74848466ed1aad8e1ac94301247"

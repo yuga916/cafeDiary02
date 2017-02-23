@@ -126,6 +126,39 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return cell
     }
     
+    //行が選択された時に発動
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)行目")
+        var cafeRow = cafeArray[indexPath.row] as! NSDictionary
+        var selectedDate = cafeRow["date"] as! NSDate
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
+        let selectDateTmp = formatter.string(from: selectedDate as Date)
+        
+        
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
+        selectedDate = formatter.date(from: selectDateTmp) as! NSDate
+        
+    
+        
+        
+        //        セグエを通して画面遷移する
+        //        →セグエを選択して、identifierに"showSecondView"を指定する
+        performSegue(withIdentifier: "showSecondView", sender: nil)
+        
+    }
+    
+    //Segueで画面遷移する時発動
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        //次の画面のオブジェクトを作成
+        //destinationはAny型なので変換
+        let secondVC = segue.destination as! MealViewController
+        
+        //選択されたkeyNameを次の画面のプロパティに保存
+        secondVC.scSelectedDate = selectedDate as NSDate
+        print("日付\(secondVC.scSelectedDate)を次の画面へ渡す")
+    }
     
     
     // Override to support conditional editing of the table view.

@@ -6,61 +6,68 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18listViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "numberOfSections"
 - "cafeDic"
+- "selectedDate"
 - "read"
 - "selectedImageURL"
-- "selectedName"
-- "viewDidLoad"
-- "selectedDate"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "prepare"
 - "cafeArray"
 - "myCafe"
-- "tableView"
-- "tableView"
-- "tableView"
+- "didReceiveMemoryWarning"
+- "selectedName"
+- "viewDidLoad"
+- "numberOfSections"
 depends-top-level:
-- !private "UIImage"
-- "UITableViewCell"
-- !private "CGSize"
-- "Date"
-- !private "NSFetchRequest"
-- !private "Diary"
-- "Int"
-- "NSArray"
-- !private "print"
-- !private "NSSortDescriptor"
-- !private "StringLiteralType"
-- !private "BooleanLiteralType"
-- !private "Void"
-- "NSDictionary"
-- "String"
-- "IndexPath"
-- !private "URL"
-- "Dictionary"
-- !private "PHFetchResult"
-- !private "PHAsset"
-- "listViewController"
-- !private "AppDelegate"
-- "Bool"
-- "UIViewController"
-- !private "MealTableViewCell"
-- !private "NSString"
-- !private "UIApplication"
-- "UITableViewDataSource"
-- !private "NSForegroundColorAttributeName"
-- "UITableViewDelegate"
-- "UITableView"
-- "AssignmentPrecedence"
-- !private "NSNumber"
-- !private "PHImageManager"
+- !private "DateFormatter"
 - !private "=="
+- !private "MealViewController"
+- !private "URL"
+- !private "NSForegroundColorAttributeName"
+- "IndexPath"
+- !private "NSString"
+- !private "StringLiteralType"
+- "Bool"
+- !private "PHFetchResult"
+- !private "UIImage"
+- !private "Void"
+- "listViewController"
+- !private "PHAsset"
+- "UIStoryboardSegue"
+- !private "BooleanLiteralType"
+- "Date"
+- !private "CGSize"
+- !private "NSSortDescriptor"
+- "NSArray"
+- "UITableView"
+- !private "NSDate"
+- !private "print"
+- "UITableViewDataSource"
+- !private "Array"
+- "UITableViewDelegate"
+- !private "NSNumber"
+- "UITableViewCell"
+- !private "PHImageManager"
+- "String"
+- !private "UIApplication"
+- !private "AppDelegate"
 - !private "AnyObject"
+- !private "MealTableViewCell"
 - !private "UIColor"
 - "CastingPrecedence"
-- !private "Array"
+- "UIViewController"
+- !private "NSFetchRequest"
+- "NSDictionary"
+- "Int"
+- !private "Diary"
+- "Dictionary"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
+- !private ["Ps9AnyObject", "DateFormatter"]
 - !private ["Ps9AnyObject", "Diary"]
 - !private ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "Key"]
@@ -76,9 +83,12 @@ depends-member:
 - ["Ps9AnyObject", "Value"]
 - ["Ps9AnyObject", "cafeArray"]
 - ["Ps9AnyObject", "cafeDic"]
+- !private ["Ps9AnyObject", "date"]
+- !private ["Ps9AnyObject", "dateFormat"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "fetch"]
 - !private ["Ps9AnyObject", "fetchAssets"]
@@ -94,13 +104,16 @@ depends-member:
 - !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "performSegue"]
 - !private ["Ps9AnyObject", "persistentContainer"]
 - !private ["Ps9AnyObject", "photoImageView"]
+- ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "rating"]
 - !private ["Ps9AnyObject", "ratingControl"]
 - ["Ps9AnyObject", "read"]
 - !private ["Ps9AnyObject", "requestImage"]
+- !private ["Ps9AnyObject", "scSelectedDate"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
 - ["Ps9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -121,6 +134,7 @@ depends-member:
 - ["Ps9AnyObject", "selectedRating"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "sortedArray"]
+- !private ["Ps9AnyObject", "string"]
 - !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
@@ -189,6 +203,7 @@ depends-member:
 - ["VSC6CGSize", "deinit"]
 - !private ["VSC6CGSize", "init"]
 - !private ["Ps7CVarArg", "CGSize"]
+- !private ["Ps7CVarArg", "DateFormatter"]
 - !private ["Ps7CVarArg", "Diary"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Index"]
@@ -215,8 +230,11 @@ depends-member:
 - ["Ps7CVarArg", "cafeArray"]
 - ["Ps7CVarArg", "cafeDic"]
 - !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "date"]
+- !private ["Ps7CVarArg", "dateFormat"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "fetch"]
 - !private ["Ps7CVarArg", "fetchAssets"]
@@ -232,13 +250,16 @@ depends-member:
 - !private ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- !private ["Ps7CVarArg", "performSegue"]
 - !private ["Ps7CVarArg", "persistentContainer"]
 - !private ["Ps7CVarArg", "photoImageView"]
+- ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "rating"]
 - !private ["Ps7CVarArg", "ratingControl"]
 - ["Ps7CVarArg", "read"]
 - !private ["Ps7CVarArg", "requestImage"]
+- !private ["Ps7CVarArg", "scSelectedDate"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
 - ["Ps7CVarArg", "scrollViewDidEndScrollingAnimation"]
@@ -259,6 +280,7 @@ depends-member:
 - ["Ps7CVarArg", "selectedRating"]
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "sortedArray"]
+- !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
@@ -289,6 +311,7 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSize"]
+- !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
 - !private ["Ps28CustomDebugStringConvertible", "Diary"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -312,8 +335,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "cafeArray"]
 - ["Ps28CustomDebugStringConvertible", "cafeDic"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
+- !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "fetch"]
 - !private ["Ps28CustomDebugStringConvertible", "fetchAssets"]
@@ -329,14 +355,17 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "persistentContainer"]
 - !private ["Ps28CustomDebugStringConvertible", "photoImageView"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "rating"]
 - !private ["Ps28CustomDebugStringConvertible", "ratingControl"]
 - ["Ps28CustomDebugStringConvertible", "read"]
 - !private ["Ps28CustomDebugStringConvertible", "requestImage"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "scSelectedDate"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -357,6 +386,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "selectedRating"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "sortedArray"]
+- !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -391,6 +421,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "sortedArray"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
+- !private ["Ps23CustomStringConvertible", "DateFormatter"]
 - !private ["Ps23CustomStringConvertible", "Diary"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -418,8 +449,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "cafeArray"]
 - ["Ps23CustomStringConvertible", "cafeDic"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "date"]
+- !private ["Ps23CustomStringConvertible", "dateFormat"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "fetch"]
 - !private ["Ps23CustomStringConvertible", "fetchAssets"]
@@ -435,14 +469,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "performSegue"]
 - !private ["Ps23CustomStringConvertible", "persistentContainer"]
 - !private ["Ps23CustomStringConvertible", "photoImageView"]
+- ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "rating"]
 - !private ["Ps23CustomStringConvertible", "ratingControl"]
 - ["Ps23CustomStringConvertible", "read"]
 - !private ["Ps23CustomStringConvertible", "requestImage"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "scSelectedDate"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -463,6 +500,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "selectedRating"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "sortedArray"]
+- !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -474,6 +512,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
 - ["V10Foundation4Date", "deinit"]
+- !private ["CSo13DateFormatter", "date"]
+- !private ["CSo13DateFormatter", "dateFormat"]
+- ["CSo13DateFormatter", "deinit"]
+- !private ["CSo13DateFormatter", "init"]
+- !private ["CSo13DateFormatter", "string"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -491,6 +534,7 @@ depends-member:
 - ["Vs10Dictionary", "deinit"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGSize"]
+- !private ["Ps9Equatable", "DateFormatter"]
 - !private ["Ps9Equatable", "Diary"]
 - !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
@@ -511,8 +555,11 @@ depends-member:
 - !private ["Ps9Equatable", "aspectFill"]
 - ["Ps9Equatable", "cafeArray"]
 - ["Ps9Equatable", "cafeDic"]
+- !private ["Ps9Equatable", "date"]
+- !private ["Ps9Equatable", "dateFormat"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "fetch"]
 - !private ["Ps9Equatable", "fetchAssets"]
@@ -528,14 +575,17 @@ depends-member:
 - !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "performSegue"]
 - !private ["Ps9Equatable", "persistentContainer"]
 - !private ["Ps9Equatable", "photoImageView"]
+- ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rating"]
 - !private ["Ps9Equatable", "ratingControl"]
 - ["Ps9Equatable", "read"]
 - !private ["Ps9Equatable", "requestImage"]
 - !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "scSelectedDate"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
 - ["Ps9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -556,6 +606,7 @@ depends-member:
 - ["Ps9Equatable", "selectedRating"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "sortedArray"]
+- !private ["Ps9Equatable", "string"]
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
@@ -591,7 +642,12 @@ depends-member:
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Sf", "deinit"]
+- !private ["CSo9Formatter", "date"]
+- !private ["CSo9Formatter", "dateFormat"]
+- !private ["CSo9Formatter", "init"]
+- !private ["CSo9Formatter", "string"]
 - !private ["Ps8Hashable", "CGSize"]
+- !private ["Ps8Hashable", "DateFormatter"]
 - !private ["Ps8Hashable", "Diary"]
 - !private ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -612,8 +668,11 @@ depends-member:
 - !private ["Ps8Hashable", "aspectFill"]
 - ["Ps8Hashable", "cafeArray"]
 - ["Ps8Hashable", "cafeDic"]
+- !private ["Ps8Hashable", "date"]
+- !private ["Ps8Hashable", "dateFormat"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "fetch"]
 - !private ["Ps8Hashable", "fetchAssets"]
@@ -629,14 +688,17 @@ depends-member:
 - !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "performSegue"]
 - !private ["Ps8Hashable", "persistentContainer"]
 - !private ["Ps8Hashable", "photoImageView"]
+- ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "rating"]
 - !private ["Ps8Hashable", "ratingControl"]
 - ["Ps8Hashable", "read"]
 - !private ["Ps8Hashable", "requestImage"]
 - !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "scSelectedDate"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
 - ["Ps8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -657,6 +719,7 @@ depends-member:
 - ["Ps8Hashable", "selectedRating"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "sortedArray"]
+- !private ["Ps8Hashable", "string"]
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
@@ -721,6 +784,8 @@ depends-member:
 - !private ["C11FoodTracker17MealTableViewCell", "nameLabel"]
 - !private ["C11FoodTracker17MealTableViewCell", "photoImageView"]
 - !private ["C11FoodTracker17MealTableViewCell", "ratingControl"]
+- ["C11FoodTracker18MealViewController", "deinit"]
+- !private ["C11FoodTracker18MealViewController", "scSelectedDate"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
@@ -750,6 +815,7 @@ depends-member:
 - !private ["CSo7NSArray", "sortedArray"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CGSize"]
+- !private ["PSo8NSCoding", "DateFormatter"]
 - !private ["PSo8NSCoding", "Diary"]
 - !private ["PSo8NSCoding", "Int"]
 - ["PSo8NSCoding", "Key"]
@@ -765,6 +831,8 @@ depends-member:
 - ["PSo8NSCoding", "Value"]
 - ["PSo8NSCoding", "cafeArray"]
 - ["PSo8NSCoding", "cafeDic"]
+- !private ["PSo8NSCoding", "date"]
+- !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "fetch"]
@@ -778,11 +846,14 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "performSegue"]
 - !private ["PSo8NSCoding", "photoImageView"]
+- ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rating"]
 - !private ["PSo8NSCoding", "ratingControl"]
 - ["PSo8NSCoding", "read"]
+- !private ["PSo8NSCoding", "scSelectedDate"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -802,6 +873,7 @@ depends-member:
 - ["PSo8NSCoding", "selectedName"]
 - ["PSo8NSCoding", "selectedRating"]
 - !private ["PSo8NSCoding", "sortedArray"]
+- !private ["PSo8NSCoding", "string"]
 - !private ["PSo8NSCoding", "subscript"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
@@ -813,18 +885,23 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "Key"]
 - ["PSo9NSCopying", "Value"]
+- !private ["PSo9NSCopying", "date"]
+- !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "fetchAssets"]
 - !private ["PSo9NSCopying", "firstObject"]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "sortedArray"]
+- !private ["PSo9NSCopying", "string"]
 - !private ["PSo9NSCopying", "subscript"]
 - !private ["PSo9NSCopying", "white"]
+- ["CSo6NSDate", "deinit"]
 - ["CSo12NSDictionary", "Key"]
 - ["CSo12NSDictionary", "Value"]
 - ["CSo12NSDictionary", "deinit"]
 - !private ["CSo12NSDictionary", "subscript"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
+- !private ["PSo26NSExtensionRequestHandling", "DateFormatter"]
 - !private ["PSo26NSExtensionRequestHandling", "Diary"]
 - !private ["PSo26NSExtensionRequestHandling", "Int"]
 - ["PSo26NSExtensionRequestHandling", "NSArray"]
@@ -847,8 +924,11 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegue"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "read"]
+- !private ["PSo26NSExtensionRequestHandling", "scSelectedDate"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -898,12 +978,15 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "Date"]
+- !private ["CSo8NSObject", "DateFormatter"]
 - !private ["CSo8NSObject", "Diary"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "Key"]
 - !private ["CSo8NSObject", "MealTableViewCell"]
+- !private ["CSo8NSObject", "MealViewController"]
 - ["CSo8NSObject", "NSArray"]
+- !private ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSFetchRequest"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
@@ -917,6 +1000,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "URL"]
@@ -924,8 +1008,11 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "cafeArray"]
 - ["CSo8NSObject", "cafeDic"]
+- !private ["CSo8NSObject", "date"]
+- !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
+- !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "fetch"]
 - !private ["CSo8NSObject", "fetchAssets"]
@@ -941,13 +1028,16 @@ depends-member:
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "performSegue"]
 - !private ["CSo8NSObject", "persistentContainer"]
 - !private ["CSo8NSObject", "photoImageView"]
+- ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "rating"]
 - !private ["CSo8NSObject", "ratingControl"]
 - ["CSo8NSObject", "read"]
 - !private ["CSo8NSObject", "requestImage"]
+- !private ["CSo8NSObject", "scSelectedDate"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -968,6 +1058,7 @@ depends-member:
 - ["CSo8NSObject", "selectedRating"]
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "sortedArray"]
+- !private ["CSo8NSObject", "string"]
 - !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
@@ -978,6 +1069,7 @@ depends-member:
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "white"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
+- !private ["PSo16NSObjectProtocol", "DateFormatter"]
 - !private ["PSo16NSObjectProtocol", "Diary"]
 - !private ["PSo16NSObjectProtocol", "Int"]
 - ["PSo16NSObjectProtocol", "Key"]
@@ -993,8 +1085,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Value"]
 - ["PSo16NSObjectProtocol", "cafeArray"]
 - ["PSo16NSObjectProtocol", "cafeDic"]
+- !private ["PSo16NSObjectProtocol", "date"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "fetch"]
 - !private ["PSo16NSObjectProtocol", "fetchAssets"]
@@ -1010,13 +1105,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "performSegue"]
 - !private ["PSo16NSObjectProtocol", "persistentContainer"]
 - !private ["PSo16NSObjectProtocol", "photoImageView"]
+- ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "rating"]
 - !private ["PSo16NSObjectProtocol", "ratingControl"]
 - ["PSo16NSObjectProtocol", "read"]
 - !private ["PSo16NSObjectProtocol", "requestImage"]
+- !private ["PSo16NSObjectProtocol", "scSelectedDate"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -1037,6 +1135,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "selectedRating"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "sortedArray"]
+- !private ["PSo16NSObjectProtocol", "string"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -1172,6 +1271,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
+- !private ["PSo21UIAppearanceContainer", "DateFormatter"]
 - !private ["PSo21UIAppearanceContainer", "Diary"]
 - !private ["PSo21UIAppearanceContainer", "Int"]
 - ["PSo21UIAppearanceContainer", "NSArray"]
@@ -1197,11 +1297,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "performSegue"]
 - !private ["PSo21UIAppearanceContainer", "photoImageView"]
+- ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "rating"]
 - !private ["PSo21UIAppearanceContainer", "ratingControl"]
 - ["PSo21UIAppearanceContainer", "read"]
+- !private ["PSo21UIAppearanceContainer", "scSelectedDate"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1235,6 +1338,7 @@ depends-member:
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "white"]
 - !private ["PSo18UIContentContainer", "CGSize"]
+- !private ["PSo18UIContentContainer", "DateFormatter"]
 - !private ["PSo18UIContentContainer", "Diary"]
 - !private ["PSo18UIContentContainer", "Int"]
 - ["PSo18UIContentContainer", "NSArray"]
@@ -1257,8 +1361,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "performSegue"]
+- ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "read"]
+- !private ["PSo18UIContentContainer", "scSelectedDate"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1300,6 +1407,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
+- !private ["PSo18UIFocusEnvironment", "DateFormatter"]
 - !private ["PSo18UIFocusEnvironment", "Diary"]
 - !private ["PSo18UIFocusEnvironment", "Int"]
 - ["PSo18UIFocusEnvironment", "NSArray"]
@@ -1325,11 +1433,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "performSegue"]
 - !private ["PSo18UIFocusEnvironment", "photoImageView"]
+- ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "rating"]
 - !private ["PSo18UIFocusEnvironment", "ratingControl"]
 - ["PSo18UIFocusEnvironment", "read"]
+- !private ["PSo18UIFocusEnvironment", "scSelectedDate"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1367,22 +1478,27 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "photoImageView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "ratingControl"]
 - !private ["CSo7UIImage", "init"]
+- !private ["PSo31UIImagePickerControllerDelegate", "scSelectedDate"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo15UINavigationBar", "deinit"]
 - !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "navigationBar"]
+- !private ["PSo30UINavigationControllerDelegate", "scSelectedDate"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "AppDelegate"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGSize"]
 - ["CSo11UIResponder", "Date"]
+- !private ["CSo11UIResponder", "DateFormatter"]
 - !private ["CSo11UIResponder", "Diary"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "MealTableViewCell"]
+- !private ["CSo11UIResponder", "MealViewController"]
 - ["CSo11UIResponder", "NSArray"]
+- !private ["CSo11UIResponder", "NSDate"]
 - ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSFetchRequest"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
@@ -1396,6 +1512,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "URL"]
@@ -1415,12 +1532,15 @@ depends-member:
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "performSegue"]
 - !private ["CSo11UIResponder", "persistentContainer"]
 - !private ["CSo11UIResponder", "photoImageView"]
+- ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "rating"]
 - !private ["CSo11UIResponder", "ratingControl"]
 - ["CSo11UIResponder", "read"]
+- !private ["CSo11UIResponder", "scSelectedDate"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1447,6 +1567,7 @@ depends-member:
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
+- !private ["PSo30UIResponderStandardEditActions", "DateFormatter"]
 - !private ["PSo30UIResponderStandardEditActions", "Diary"]
 - !private ["PSo30UIResponderStandardEditActions", "Int"]
 - ["PSo30UIResponderStandardEditActions", "NSArray"]
@@ -1473,12 +1594,15 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - !private ["PSo30UIResponderStandardEditActions", "persistentContainer"]
 - !private ["PSo30UIResponderStandardEditActions", "photoImageView"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "rating"]
 - !private ["PSo30UIResponderStandardEditActions", "ratingControl"]
 - ["PSo30UIResponderStandardEditActions", "read"]
+- !private ["PSo30UIResponderStandardEditActions", "scSelectedDate"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDecelerating"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDragging"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndScrollingAnimation"]
@@ -1507,6 +1631,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
+- !private ["PSo20UIScrollViewDelegate", "DateFormatter"]
 - !private ["PSo20UIScrollViewDelegate", "Diary"]
 - !private ["PSo20UIScrollViewDelegate", "Int"]
 - ["PSo20UIScrollViewDelegate", "NSArray"]
@@ -1526,6 +1651,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "performSegue"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "read"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1542,12 +1668,14 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitles"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo20UIScrollViewDelegate", "selectedDate"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["CSo11UIStackView", "rating"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
+- !private ["PSo16UIStateRestoring", "DateFormatter"]
 - !private ["PSo16UIStateRestoring", "Diary"]
 - !private ["PSo16UIStateRestoring", "Int"]
 - ["PSo16UIStateRestoring", "NSArray"]
@@ -1570,8 +1698,11 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "performSegue"]
+- ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "read"]
+- !private ["PSo16UIStateRestoring", "scSelectedDate"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1595,12 +1726,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo17UIStoryboardSegue", "deinit"]
+- !private ["CSo17UIStoryboardSegue", "destination"]
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
 - !private ["CSo15UITableViewCell", "nameLabel"]
 - !private ["CSo15UITableViewCell", "photoImageView"]
 - !private ["CSo15UITableViewCell", "ratingControl"]
 - !private ["PSo21UITableViewDataSource", "CGSize"]
+- !private ["PSo21UITableViewDataSource", "DateFormatter"]
 - !private ["PSo21UITableViewDataSource", "Diary"]
 - !private ["PSo21UITableViewDataSource", "Int"]
 - ["PSo21UITableViewDataSource", "NSArray"]
@@ -1620,6 +1754,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "performSegue"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "read"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
@@ -1636,11 +1771,13 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitles"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "selectedDate"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZooming"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "CGSize"]
+- !private ["PSo19UITableViewDelegate", "DateFormatter"]
 - !private ["PSo19UITableViewDelegate", "Diary"]
 - !private ["PSo19UITableViewDelegate", "Int"]
 - ["PSo19UITableViewDelegate", "NSArray"]
@@ -1660,6 +1797,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "performSegue"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "read"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1676,11 +1814,14 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitles"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITableViewDelegate", "selectedDate"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewForZooming"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
+- !private ["PSo19UITextFieldDelegate", "scSelectedDate"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
+- !private ["PSo18UITraitEnvironment", "DateFormatter"]
 - !private ["PSo18UITraitEnvironment", "Diary"]
 - !private ["PSo18UITraitEnvironment", "Int"]
 - ["PSo18UITraitEnvironment", "NSArray"]
@@ -1706,11 +1847,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "performSegue"]
 - !private ["PSo18UITraitEnvironment", "photoImageView"]
+- ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "rating"]
 - !private ["PSo18UITraitEnvironment", "ratingControl"]
 - ["PSo18UITraitEnvironment", "read"]
+- !private ["PSo18UITraitEnvironment", "scSelectedDate"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1749,11 +1893,14 @@ depends-member:
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGSize"]
 - ["CSo16UIViewController", "Date"]
+- !private ["CSo16UIViewController", "DateFormatter"]
 - !private ["CSo16UIViewController", "Diary"]
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "MealTableViewCell"]
+- !private ["CSo16UIViewController", "MealViewController"]
 - ["CSo16UIViewController", "NSArray"]
+- !private ["CSo16UIViewController", "NSDate"]
 - ["CSo16UIViewController", "NSDictionary"]
 - !private ["CSo16UIViewController", "NSFetchRequest"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
@@ -1767,6 +1914,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIApplication"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "URL"]
@@ -1783,8 +1931,11 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "performSegue"]
+- ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "read"]
+- !private ["CSo16UIViewController", "scSelectedDate"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1856,6 +2007,7 @@ depends-member:
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGSize"]
+- !private ["Ps9_Hashable", "DateFormatter"]
 - !private ["Ps9_Hashable", "Diary"]
 - !private ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
@@ -1876,8 +2028,11 @@ depends-member:
 - !private ["Ps9_Hashable", "aspectFill"]
 - ["Ps9_Hashable", "cafeArray"]
 - ["Ps9_Hashable", "cafeDic"]
+- !private ["Ps9_Hashable", "date"]
+- !private ["Ps9_Hashable", "dateFormat"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "fetch"]
 - !private ["Ps9_Hashable", "fetchAssets"]
@@ -1893,14 +2048,17 @@ depends-member:
 - !private ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps9_Hashable", "performSegue"]
 - !private ["Ps9_Hashable", "persistentContainer"]
 - !private ["Ps9_Hashable", "photoImageView"]
+- ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "rating"]
 - !private ["Ps9_Hashable", "ratingControl"]
 - ["Ps9_Hashable", "read"]
 - !private ["Ps9_Hashable", "requestImage"]
 - !private ["Ps9_Hashable", "row"]
+- !private ["Ps9_Hashable", "scSelectedDate"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps9_Hashable", "scrollViewDidEndDragging"]
 - ["Ps9_Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -1921,6 +2079,7 @@ depends-member:
 - ["Ps9_Hashable", "selectedRating"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "sortedArray"]
+- !private ["Ps9_Hashable", "string"]
 - !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
@@ -1974,11 +2133,14 @@ depends-member:
 - ["C11FoodTracker18listViewController", "Bool"]
 - !private ["C11FoodTracker18listViewController", "CGSize"]
 - ["C11FoodTracker18listViewController", "Date"]
+- !private ["C11FoodTracker18listViewController", "DateFormatter"]
 - !private ["C11FoodTracker18listViewController", "Diary"]
 - ["C11FoodTracker18listViewController", "IndexPath"]
 - ["C11FoodTracker18listViewController", "Int"]
 - !private ["C11FoodTracker18listViewController", "MealTableViewCell"]
+- !private ["C11FoodTracker18listViewController", "MealViewController"]
 - ["C11FoodTracker18listViewController", "NSArray"]
+- !private ["C11FoodTracker18listViewController", "NSDate"]
 - ["C11FoodTracker18listViewController", "NSDictionary"]
 - !private ["C11FoodTracker18listViewController", "NSFetchRequest"]
 - !private ["C11FoodTracker18listViewController", "NSForegroundColorAttributeName"]
@@ -1992,6 +2154,7 @@ depends-member:
 - !private ["C11FoodTracker18listViewController", "UIApplication"]
 - !private ["C11FoodTracker18listViewController", "UIColor"]
 - !private ["C11FoodTracker18listViewController", "UIImage"]
+- ["C11FoodTracker18listViewController", "UIStoryboardSegue"]
 - ["C11FoodTracker18listViewController", "UITableView"]
 - ["C11FoodTracker18listViewController", "UITableViewCell"]
 - !private ["C11FoodTracker18listViewController", "URL"]
@@ -2007,6 +2170,8 @@ depends-member:
 - !private ["C11FoodTracker18listViewController", "navigationController"]
 - ["C11FoodTracker18listViewController", "numberOfSections"]
 - ["C11FoodTracker18listViewController", "numberOfSectionsInTableView"]
+- !private ["C11FoodTracker18listViewController", "performSegue"]
+- ["C11FoodTracker18listViewController", "prepare"]
 - !private ["C11FoodTracker18listViewController", "print"]
 - ["C11FoodTracker18listViewController", "read"]
 - ["C11FoodTracker18listViewController", "scrollViewDidEndDecelerating"]
@@ -2051,6 +2216,7 @@ depends-nominal:
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Date"
+- "CSo13DateFormatter"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - "C11FoodTracker5Diary"
@@ -2066,6 +2232,7 @@ depends-nominal:
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
+- !private "CSo9Formatter"
 - "Ps8Hashable"
 - "SQ"
 - "V10Foundation9IndexPath"
@@ -2082,6 +2249,7 @@ depends-nominal:
 - !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - "C11FoodTracker17MealTableViewCell"
+- "C11FoodTracker18MealViewController"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
@@ -2089,6 +2257,7 @@ depends-nominal:
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
+- "CSo6NSDate"
 - "CSo12NSDictionary"
 - "PSo26NSExtensionRequestHandling"
 - "PSo17NSFastEnumeration"
@@ -2142,20 +2311,24 @@ depends-nominal:
 - !private "PSo11UIFocusItem"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UIImage"
+- !private "PSo31UIImagePickerControllerDelegate"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo15UINavigationBar"
 - "CSo22UINavigationController"
+- !private "PSo30UINavigationControllerDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - !private "CSo11UIStackView"
 - "PSo16UIStateRestoring"
+- "CSo17UIStoryboardSegue"
 - "CSo11UITableView"
 - !private "CSo15UITableViewCell"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
+- !private "PSo19UITextFieldDelegate"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
@@ -2212,4 +2385,4 @@ depends-external:
 - "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "d802c789c95cb8c9a7e9f1cf4d8b4614"
+interface-hash: "7344fb55ee9c35a7708167a8e310fee2"
