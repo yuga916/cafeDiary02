@@ -69,7 +69,7 @@ class MealTableViewController: UITableViewController {
         } catch {
         }
         //TableViewの再描画
-        //        myTableView.reloadData()
+//                myTableView.reloadData()
         //配列は降順になっているから、昇順にする
         let sortDescription = NSSortDescriptor(key: "rating", ascending: false)
         let sortDescArray = [sortDescription]

@@ -6,67 +6,67 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18listViewController", ""]
 provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "selectedDate"
 - "cafeArray"
 - "viewDidLoad"
-- "selectedName"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "selectedDate"
-- "viewWillAppear"
-- "prepare"
-- "numberOfSections"
-- "myTableView"
-- "didReceiveMemoryWarning"
-- "cafeDic"
 - "selectedImageURL"
 - "myCafe"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "cafeDic"
+- "myTableView"
+- "viewWillAppear"
+- "numberOfSections"
 - "read"
+- "prepare"
+- "selectedName"
 depends-top-level:
-- !private "AppDelegate"
+- "String"
+- !private "UIColor"
+- !private "NSString"
+- "NSArray"
 - !private "NSForegroundColorAttributeName"
-- !private "UIApplication"
-- !private "Void"
-- "Bool"
-- !private "StringLiteralType"
-- "UITableViewDataSource"
+- !private "UIImage"
+- !private "MealViewController"
 - "UITableViewDelegate"
-- "NSDictionary"
+- !private "print"
+- "UITableViewCell"
+- "Dictionary"
+- !private "PHImageManager"
+- !private "URL"
+- "UITableViewDataSource"
+- "Date"
 - !private "NSFetchRequest"
 - !private "Diary"
 - !private "NSSortDescriptor"
-- !private "AnyObject"
-- !private "PHAsset"
-- "UIViewController"
-- !private "MealTableViewCell"
-- !private "BooleanLiteralType"
-- "Date"
-- !private "CGSize"
-- "UITableViewCell"
-- !private "URL"
-- !private "NSDate"
-- !private "NSNumber"
-- !private "PHFetchResult"
-- "listViewController"
-- !private "print"
-- "String"
-- "UITableView"
-- !private "MealViewController"
-- "UIStoryboardSegue"
-- !private "NSString"
-- !private "UIImage"
-- !private "UIColor"
-- "Dictionary"
-- !private "Array"
-- !private "PHImageManager"
 - "AssignmentPrecedence"
 - !private "=="
-- "IndexPath"
-- "Int"
-- "NSArray"
 - "CastingPrecedence"
+- !private "NSDate"
+- "UIViewController"
+- "listViewController"
+- "Bool"
+- "IndexPath"
+- !private "Void"
 - !private "DateFormatter"
+- !private "StringLiteralType"
+- !private "Array"
+- !private "CGSize"
+- "Int"
+- "UIStoryboardSegue"
+- !private "NSNumber"
+- !private "UIApplication"
+- !private "BooleanLiteralType"
+- !private "AnyObject"
+- !private "PHFetchResult"
+- !private "MealTableViewCell"
+- !private "PHAsset"
+- !private "AppDelegate"
+- "NSDictionary"
+- "UITableView"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "DateFormatter"]
@@ -1699,7 +1699,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "cafeDic"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSo20UIScrollViewDelegate", "myCafe"]
 - !private ["PSo20UIScrollViewDelegate", "myTableView"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
@@ -1806,7 +1805,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "cafeDic"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSo21UITableViewDataSource", "myCafe"]
 - !private ["PSo21UITableViewDataSource", "myTableView"]
 - !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
@@ -1850,7 +1848,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "cafeDic"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSo19UITableViewDelegate", "myCafe"]
 - !private ["PSo19UITableViewDelegate", "myTableView"]
 - !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]

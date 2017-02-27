@@ -89,7 +89,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         
         calenderCollectionView.delegate = self
         calenderCollectionView.dataSource = self
-        calenderCollectionView.backgroundColor = UIColor.white
+//        calenderCollectionView.backgroundColor = UIColor.white
         
         // CollectionViewのレイアウトを生成.
         let layout = UICollectionViewFlowLayout()
@@ -235,7 +235,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         //テキスト配置
         if indexPath.section == 0 {
             cell.textLabel.text = weekArray[indexPath.row]
-            cell.backgroundColor = UIColor.clear
+//            cell.backgroundColor = UIColor.clear
         } else {
             cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
             

@@ -12,16 +12,16 @@ provides-member:
 provides-dynamic-lookup:
 - "img"
 - "studyTime"
-- "date"
 - "coffeeName"
 - "rating"
+- "date"
 depends-top-level:
 - !private "StringLiteralType"
-- "String"
-- "Int16"
-- "NSDate"
 - "NSFetchRequest"
 - "Diary"
+- "String"
+- "NSDate"
+- "Int16"
 depends-member:
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - ["Ps9AnyObject", "coffeeName"]

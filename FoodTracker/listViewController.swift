@@ -53,7 +53,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             //            print(fetchResults)
             //データの取得
             //一旦配列を空っぽにする（初期化する）→そうしないとどんどん、TableViewに表示されてしまう。
-            myCafe = NSArray() as! [String]
+            cafeArray = NSArray() as! [NSDictionary]
             //nilが入るかもしれないのでasに?をつける。
             for result: AnyObject in fetchResults {
                 

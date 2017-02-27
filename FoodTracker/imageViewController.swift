@@ -63,7 +63,6 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
         } catch {
         }
         //TableViewの再描画
-        //        myTableView.reloadData()
     }
     
     // Screenサイズに応じたセルサイズを返す
