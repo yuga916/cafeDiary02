@@ -273,8 +273,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     let query:NSFetchRequest<Diary> = Diary.fetchRequest()
     
     do{
-        //データを一括取得
-        //データを一括取得
+        //データを一件取得
         //            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "date")
         query.predicate = NSPredicate(format:"date = %@", scSelectedDate)
         let fetchResults = try! viewContext.fetch(query)

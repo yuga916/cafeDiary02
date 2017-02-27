@@ -248,7 +248,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.97063301282051284" green="0.94708208979177555" blue="0.8764293207055639" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.96309143029349664" blue="0.73470041925277552" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" red="0.50783253205128198" green="0.37001265870561445" blue="0.19644643039484666" alpha="1" colorSpace="calibratedRGB"/>
                                     </collectionViewCell>
                                 </cells>

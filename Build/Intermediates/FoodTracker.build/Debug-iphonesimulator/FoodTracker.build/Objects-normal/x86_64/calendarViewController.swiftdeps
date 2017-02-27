@@ -9,109 +9,109 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
+- "cellMargin"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "calenderCollectionView"
+- "cafeLabel"
+- "lightRed"
+- "timeLabel"
+- "viewDidLoad"
+- "timeFont"
 - "editButton"
 - "coffeeFont"
+- "read"
 - "changeHeaderTitle"
-- "cafeDic"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "selectedDate"
-- "navigationBar"
+- "tappedHeaderPrevBtn"
+- "myCafe"
+- "daysPerWeek"
 - "ratingControl"
-- "cafeArray"
-- "viewDidLoad"
-- "numberOfSections"
-- "weekArray"
-- "lightRed"
-- "dateManager"
-- "cafeImage"
-- "today"
+- "didReceiveMemoryWarning"
 - "tappedHeaderNextBtn"
+- "numberOfSections"
+- "lightBlue"
+- "cafeDic"
+- "selectedDate"
+- "weekArray"
+- "prepare"
+- "dateManager"
+- "navigationBar"
+- "cafeImage"
+- "viewWillAppear"
+- "cafeArray"
+- "today"
 - "headerNextBtn"
 - "headerPrevBtn"
-- "tappedHeaderPrevBtn"
-- "read"
 - "hLabel"
-- "lightBlue"
-- "daysPerWeek"
-- "prepare"
-- "cellMargin"
-- "calenderCollectionView"
-- "didReceiveMemoryWarning"
-- "myCafe"
-- "cafeLabel"
-- "viewWillAppear"
-- "timeLabel"
-- "timeFont"
 depends-top-level:
-- !private "=="
-- "StringLiteralType"
-- "UILabel"
-- "UIStoryboardSegue"
-- "UIButton"
-- "Dictionary"
-- "RatingControl"
-- "IndexPath"
-- "NSArray"
-- !private "NSNumber"
-- "UINavigationItem"
-- "UICollectionView"
-- "UICollectionViewDelegateFlowLayout"
-- "NSDate"
-- !private "*"
-- !private "NSLocale"
-- !private "+"
-- "UICollectionViewDelegate"
-- "UICollectionViewDataSource"
-- !private "UIFont"
-- !private "BooleanLiteralType"
-- "CGSize"
-- "CGFloat"
-- "Array"
-- "NSIndexPath"
 - !private "PHAsset"
+- !private "CalendarCell"
+- "AssignmentPrecedence"
+- !private "=="
+- "CastingPrecedence"
+- !private "-"
+- !private "UnicodeScalarType"
+- !private "+"
+- !private "MealViewController"
+- "UIButton"
+- "UICollectionView"
+- !private "AppDelegate"
+- "UIColor"
+- !private "PHImageManager"
+- "RatingControl"
 - "UICollectionViewCell"
 - !private "UIApplication"
-- !private "NSFetchRequest"
-- !private "Diary"
-- !private "PHFetchResult"
-- !private "NSForegroundColorAttributeName"
-- !private "AnyObject"
-- "String"
-- "NSDictionary"
-- !private "Date"
-- "Int"
-- "DateManager"
-- "calendarViewController"
-- "UIViewController"
-- !private "/"
-- !private "PHImageManager"
-- "UIBarButtonItem"
-- !private "UICollectionViewFlowLayout"
-- !private "%"
-- !private "Locale"
-- !private "UIImage"
-- !private "AppDelegate"
-- !private "MealViewController"
-- !private "print"
+- !private "*"
+- !private "BooleanLiteralType"
+- "Array"
+- "Dictionary"
+- "UINavigationItem"
+- "UICollectionViewDelegateFlowLayout"
+- !private "UIFont"
+- "StringLiteralType"
 - !private "URL"
-- !private "UIView"
-- !private "CalendarCell"
-- "UICollectionViewLayout"
-- !private "-"
 - !private "Void"
-- "AssignmentPrecedence"
-- "UIColor"
-- "CastingPrecedence"
+- !private "/"
 - !private "NSPredicate"
-- "UIImageView"
-- !private "UnicodeScalarType"
 - !private "DateFormatter"
+- "UIViewController"
+- "UIBarButtonItem"
+- !private "NSNumber"
+- !private "UIView"
+- "UILabel"
+- "UIStoryboardSegue"
+- !private "UICollectionViewFlowLayout"
+- !private "AnyObject"
+- "CGFloat"
+- !private "NSLocale"
+- !private "UIImage"
+- !private "Date"
+- "IndexPath"
+- "NSDate"
+- "calendarViewController"
+- !private "Diary"
+- "UICollectionViewLayout"
+- !private "NSFetchRequest"
+- !private "Locale"
+- "String"
+- !private "NSForegroundColorAttributeName"
+- "NSArray"
 - "Bool"
+- !private "print"
+- !private "PHFetchResult"
+- "NSDictionary"
+- !private "%"
+- "CGSize"
+- "UIImageView"
+- "NSIndexPath"
+- "DateManager"
+- "UICollectionViewDelegate"
+- "Int"
+- "UICollectionViewDataSource"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -136,6 +136,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "URL"]
 - ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "borderColor"]
 - !private ["Ps9AnyObject", "borderWidth"]
 - !private ["Ps9AnyObject", "brown"]
@@ -147,6 +148,7 @@ depends-member:
 - ["Ps9AnyObject", "cellMargin"]
 - !private ["Ps9AnyObject", "cgColor"]
 - ["Ps9AnyObject", "changeHeaderTitle"]
+- !private ["Ps9AnyObject", "clear"]
 - ["Ps9AnyObject", "coffeeFont"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "conversionDateFormat"]
@@ -290,6 +292,7 @@ depends-member:
 - !private ["CSo7CALayer", "borderWidth"]
 - !private ["CSo7CALayer", "cornerRadius"]
 - ["CSo7CALayer", "deinit"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "dataSource"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
@@ -350,6 +353,7 @@ depends-member:
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "borderColor"]
 - !private ["Ps7CVarArg", "borderWidth"]
 - !private ["Ps7CVarArg", "brown"]
@@ -361,6 +365,7 @@ depends-member:
 - ["Ps7CVarArg", "cellMargin"]
 - !private ["Ps7CVarArg", "cgColor"]
 - ["Ps7CVarArg", "changeHeaderTitle"]
+- !private ["Ps7CVarArg", "clear"]
 - ["Ps7CVarArg", "coffeeFont"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "conversionDateFormat"]
@@ -452,6 +457,7 @@ depends-member:
 - ["Ps7CVarArg", "weekArray"]
 - !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", ""]
+- !private ["C11FoodTracker12CalendarCell", "backgroundColor"]
 - ["C11FoodTracker12CalendarCell", "deinit"]
 - !private ["C11FoodTracker12CalendarCell", "selectedBackgroundView"]
 - !private ["C11FoodTracker12CalendarCell", "textLabel"]
@@ -506,6 +512,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "borderColor"]
 - !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "brown"]
@@ -517,6 +524,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "cellMargin"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - ["Ps28CustomDebugStringConvertible", "changeHeaderTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "clear"]
 - ["Ps28CustomDebugStringConvertible", "coffeeFont"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "conversionDateFormat"]
@@ -674,6 +682,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "borderColor"]
 - !private ["Ps23CustomStringConvertible", "borderWidth"]
 - !private ["Ps23CustomStringConvertible", "brown"]
@@ -685,6 +694,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "cellMargin"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - ["Ps23CustomStringConvertible", "changeHeaderTitle"]
+- !private ["Ps23CustomStringConvertible", "clear"]
 - ["Ps23CustomStringConvertible", "coffeeFont"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "conversionDateFormat"]
@@ -834,6 +844,7 @@ depends-member:
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "aspectFill"]
+- !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "borderColor"]
 - !private ["Ps9Equatable", "borderWidth"]
 - !private ["Ps9Equatable", "brown"]
@@ -845,6 +856,7 @@ depends-member:
 - ["Ps9Equatable", "cellMargin"]
 - !private ["Ps9Equatable", "cgColor"]
 - ["Ps9Equatable", "changeHeaderTitle"]
+- !private ["Ps9Equatable", "clear"]
 - !private ["Ps9Equatable", "clockO"]
 - !private ["Ps9Equatable", "coffee"]
 - ["Ps9Equatable", "coffeeFont"]
@@ -1009,6 +1021,7 @@ depends-member:
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "aspectFill"]
+- !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "borderColor"]
 - !private ["Ps8Hashable", "borderWidth"]
 - !private ["Ps8Hashable", "brown"]
@@ -1020,6 +1033,7 @@ depends-member:
 - ["Ps8Hashable", "cellMargin"]
 - !private ["Ps8Hashable", "cgColor"]
 - ["Ps8Hashable", "changeHeaderTitle"]
+- !private ["Ps8Hashable", "clear"]
 - !private ["Ps8Hashable", "clockO"]
 - !private ["Ps8Hashable", "coffee"]
 - ["Ps8Hashable", "coffeeFont"]
@@ -1219,6 +1233,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "URL"]
 - ["PSo8NSCoding", "Value"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "borderColor"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "brown"]
@@ -1230,6 +1245,7 @@ depends-member:
 - ["PSo8NSCoding", "cellMargin"]
 - !private ["PSo8NSCoding", "cgColor"]
 - ["PSo8NSCoding", "changeHeaderTitle"]
+- !private ["PSo8NSCoding", "clear"]
 - ["PSo8NSCoding", "coffeeFont"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "cornerRadius"]
@@ -1311,6 +1327,7 @@ depends-member:
 - ["PSo9NSCopying", "Value"]
 - !private ["PSo9NSCopying", "brown"]
 - !private ["PSo9NSCopying", "cgColor"]
+- !private ["PSo9NSCopying", "clear"]
 - !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "fetchAssets"]
@@ -1471,6 +1488,7 @@ depends-member:
 - !private ["CSo8NSObject", "URL"]
 - ["CSo8NSObject", "Value"]
 - !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "borderColor"]
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "brown"]
@@ -1482,6 +1500,7 @@ depends-member:
 - ["CSo8NSObject", "cellMargin"]
 - !private ["CSo8NSObject", "cgColor"]
 - ["CSo8NSObject", "changeHeaderTitle"]
+- !private ["CSo8NSObject", "clear"]
 - ["CSo8NSObject", "coffeeFont"]
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "conversionDateFormat"]
@@ -1592,6 +1611,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "URL"]
 - ["PSo16NSObjectProtocol", "Value"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "brown"]
@@ -1603,6 +1623,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "cellMargin"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - ["PSo16NSObjectProtocol", "changeHeaderTitle"]
+- !private ["PSo16NSObjectProtocol", "clear"]
 - ["PSo16NSObjectProtocol", "coffeeFont"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "conversionDateFormat"]
@@ -1701,6 +1722,7 @@ depends-member:
 - ["PSo14NSSecureCoding", "Value"]
 - !private ["PSo14NSSecureCoding", "brown"]
 - !private ["PSo14NSSecureCoding", "cgColor"]
+- !private ["PSo14NSSecureCoding", "clear"]
 - !private ["PSo14NSSecureCoding", "fontAwesomeIcon"]
 - !private ["PSo14NSSecureCoding", "gray"]
 - ["PSo14NSSecureCoding", "init"]
@@ -1817,6 +1839,7 @@ depends-member:
 - ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "fontAwesomeIcon"]
 - ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
@@ -1835,6 +1858,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
@@ -1873,6 +1897,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "URL"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "cafeArray"]
 - ["PSo21UIAppearanceContainer", "cafeDic"]
 - ["PSo21UIAppearanceContainer", "cafeImage"]
@@ -1950,6 +1975,7 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo8UIButton", "titleLabel"]
+- !private ["CSo24UICollectionReusableView", "backgroundColor"]
 - !private ["CSo24UICollectionReusableView", "selectedBackgroundView"]
 - !private ["CSo24UICollectionReusableView", "textLabel"]
 - !private ["CSo16UICollectionView", "dataSource"]
@@ -1958,6 +1984,7 @@ depends-member:
 - !private ["CSo16UICollectionView", "dequeueReusableCell"]
 - !private ["CSo16UICollectionView", "frame"]
 - !private ["CSo16UICollectionView", "reloadData"]
+- !private ["CSo20UICollectionViewCell", "backgroundColor"]
 - ["CSo20UICollectionViewCell", "deinit"]
 - !private ["CSo20UICollectionViewCell", "selectedBackgroundView"]
 - !private ["CSo20UICollectionViewCell", "textLabel"]
@@ -2153,6 +2180,7 @@ depends-member:
 - ["CSo7UIColor", "UIColor"]
 - !private ["CSo7UIColor", "brown"]
 - !private ["CSo7UIColor", "cgColor"]
+- !private ["CSo7UIColor", "clear"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "gray"]
 - !private ["CSo7UIColor", "init"]
@@ -2240,6 +2268,7 @@ depends-member:
 - !private ["CSo9UIControl", "titleLabel"]
 - ["VSC14UIControlState", "deinit"]
 - !private ["VSC14UIControlState", "normal"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
@@ -2258,6 +2287,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo17UICoordinateSpace", "titleLabel"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
@@ -2296,6 +2326,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "URL"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "cafeArray"]
 - ["PSo18UIFocusEnvironment", "cafeDic"]
 - ["PSo18UIFocusEnvironment", "cafeImage"]
@@ -2366,6 +2397,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "weekArray"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "dataSource"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
@@ -2446,6 +2478,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "cafeArray"]
 - ["CSo11UIResponder", "cafeDic"]
 - ["CSo11UIResponder", "cafeImage"]
@@ -2537,6 +2570,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "URL"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "cafeArray"]
 - ["PSo30UIResponderStandardEditActions", "cafeDic"]
 - ["PSo30UIResponderStandardEditActions", "cafeImage"]
@@ -2774,6 +2808,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "URL"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "cafeArray"]
 - ["PSo18UITraitEnvironment", "cafeDic"]
 - ["PSo18UITraitEnvironment", "cafeImage"]
@@ -2844,6 +2879,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "weekArray"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "dataSource"]
 - ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "delegate"]
@@ -2981,6 +3017,7 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dataSource"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
@@ -3023,6 +3060,7 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "UIColor"]
 - !private ["Ps26_ExpressibleByColorLiteral", "brown"]
 - !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
+- !private ["Ps26_ExpressibleByColorLiteral", "clear"]
 - !private ["Ps26_ExpressibleByColorLiteral", "gray"]
 - !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "lightBlue"]
@@ -3059,6 +3097,7 @@ depends-member:
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "aspectFill"]
+- !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "borderColor"]
 - !private ["Ps9_Hashable", "borderWidth"]
 - !private ["Ps9_Hashable", "brown"]
@@ -3070,6 +3109,7 @@ depends-member:
 - ["Ps9_Hashable", "cellMargin"]
 - !private ["Ps9_Hashable", "cgColor"]
 - ["Ps9_Hashable", "changeHeaderTitle"]
+- !private ["Ps9_Hashable", "clear"]
 - !private ["Ps9_Hashable", "clockO"]
 - !private ["Ps9_Hashable", "coffee"]
 - ["Ps9_Hashable", "coffeeFont"]

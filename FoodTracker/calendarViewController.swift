@@ -235,10 +235,10 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         //テキスト配置
         if indexPath.section == 0 {
             cell.textLabel.text = weekArray[indexPath.row]
-//            cell.backgroundColor = UIColor.clear
+            cell.backgroundColor = UIColor.clear
         } else {
             cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
-            
+            cell.backgroundColor = UIColor(red: 0.0, green: 0.392, blue: 0.0, alpha: 1.0)
             //月によって1日の場所は異なる(後ほど説明します)
         }
         
