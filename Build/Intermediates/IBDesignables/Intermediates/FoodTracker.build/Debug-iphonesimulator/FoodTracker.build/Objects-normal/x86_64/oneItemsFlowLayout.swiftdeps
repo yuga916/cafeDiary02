@@ -1,0 +1,325 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "oneItemsFlowLayout"
+provides-nominal:
+- "C11FoodTracker18oneItemsFlowLayout"
+provides-member:
+- ["C11FoodTracker18oneItemsFlowLayout", ""]
+provides-dynamic-lookup:
+- "itemSize"
+- "setupLayout"
+- "itemHeight"
+- "itemWidth"
+- "targetContentOffset"
+depends-top-level:
+- "UICollectionViewFlowLayout"
+- "AssignmentPrecedence"
+- "NSCoder"
+- "oneItemsFlowLayout"
+- !private "*"
+- !private "-"
+- "CGSize"
+- "CGPoint"
+- "CGFloat"
+depends-member:
+- !private ["Ps9AnyObject", "CGSize"]
+- !private ["Ps9AnyObject", "collectionView"]
+- !private ["Ps9AnyObject", "contentOffset"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "itemHeight"]
+- ["Ps9AnyObject", "itemSize"]
+- ["Ps9AnyObject", "itemWidth"]
+- !private ["Ps9AnyObject", "minimumInteritemSpacing"]
+- !private ["Ps9AnyObject", "minimumLineSpacing"]
+- !private ["Ps9AnyObject", "scrollDirection"]
+- ["Ps9AnyObject", "setupLayout"]
+- ["Ps9AnyObject", "targetContentOffset"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "contentOffset"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "width"]
+- ["VSC6CGSize", "deinit"]
+- !private ["VSC6CGSize", "init"]
+- !private ["Ps7CVarArg", "CGSize"]
+- !private ["Ps7CVarArg", "collectionView"]
+- !private ["Ps7CVarArg", "contentOffset"]
+- !private ["Ps7CVarArg", "frame"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "itemHeight"]
+- ["Ps7CVarArg", "itemSize"]
+- ["Ps7CVarArg", "itemWidth"]
+- !private ["Ps7CVarArg", "minimumInteritemSpacing"]
+- !private ["Ps7CVarArg", "minimumLineSpacing"]
+- !private ["Ps7CVarArg", "scrollDirection"]
+- ["Ps7CVarArg", "setupLayout"]
+- ["Ps7CVarArg", "targetContentOffset"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "CGSize"]
+- !private ["Ps28CustomDebugStringConvertible", "collectionView"]
+- !private ["Ps28CustomDebugStringConvertible", "contentOffset"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "itemHeight"]
+- ["Ps28CustomDebugStringConvertible", "itemSize"]
+- ["Ps28CustomDebugStringConvertible", "itemWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "minimumInteritemSpacing"]
+- !private ["Ps28CustomDebugStringConvertible", "minimumLineSpacing"]
+- !private ["Ps28CustomDebugStringConvertible", "scrollDirection"]
+- ["Ps28CustomDebugStringConvertible", "setupLayout"]
+- ["Ps28CustomDebugStringConvertible", "targetContentOffset"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "CGSize"]
+- !private ["Ps23CustomStringConvertible", "collectionView"]
+- !private ["Ps23CustomStringConvertible", "contentOffset"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "itemHeight"]
+- ["Ps23CustomStringConvertible", "itemSize"]
+- ["Ps23CustomStringConvertible", "itemWidth"]
+- !private ["Ps23CustomStringConvertible", "minimumInteritemSpacing"]
+- !private ["Ps23CustomStringConvertible", "minimumLineSpacing"]
+- !private ["Ps23CustomStringConvertible", "scrollDirection"]
+- ["Ps23CustomStringConvertible", "setupLayout"]
+- ["Ps23CustomStringConvertible", "targetContentOffset"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CGSize"]
+- !private ["Ps9Equatable", "collectionView"]
+- !private ["Ps9Equatable", "contentOffset"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "horizontal"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "itemHeight"]
+- ["Ps9Equatable", "itemSize"]
+- ["Ps9Equatable", "itemWidth"]
+- !private ["Ps9Equatable", "minimumInteritemSpacing"]
+- !private ["Ps9Equatable", "minimumLineSpacing"]
+- !private ["Ps9Equatable", "scrollDirection"]
+- ["Ps9Equatable", "setupLayout"]
+- ["Ps9Equatable", "targetContentOffset"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "CGSize"]
+- !private ["Ps8Hashable", "collectionView"]
+- !private ["Ps8Hashable", "contentOffset"]
+- !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "horizontal"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "itemHeight"]
+- ["Ps8Hashable", "itemSize"]
+- ["Ps8Hashable", "itemWidth"]
+- !private ["Ps8Hashable", "minimumInteritemSpacing"]
+- !private ["Ps8Hashable", "minimumLineSpacing"]
+- !private ["Ps8Hashable", "scrollDirection"]
+- ["Ps8Hashable", "setupLayout"]
+- ["Ps8Hashable", "targetContentOffset"]
+- ["Ps8Hashable", ""]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "CGSize"]
+- !private ["PSo8NSCoding", "collectionView"]
+- !private ["PSo8NSCoding", "contentOffset"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "itemHeight"]
+- ["PSo8NSCoding", "itemSize"]
+- ["PSo8NSCoding", "itemWidth"]
+- !private ["PSo8NSCoding", "minimumInteritemSpacing"]
+- !private ["PSo8NSCoding", "minimumLineSpacing"]
+- !private ["PSo8NSCoding", "scrollDirection"]
+- ["PSo8NSCoding", "setupLayout"]
+- ["PSo8NSCoding", "targetContentOffset"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "CGPoint"]
+- ["CSo8NSObject", "CGSize"]
+- ["CSo8NSObject", "NSCoder"]
+- !private ["CSo8NSObject", "collectionView"]
+- !private ["CSo8NSObject", "contentOffset"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "itemHeight"]
+- ["CSo8NSObject", "itemSize"]
+- ["CSo8NSObject", "itemWidth"]
+- !private ["CSo8NSObject", "minimumInteritemSpacing"]
+- !private ["CSo8NSObject", "minimumLineSpacing"]
+- !private ["CSo8NSObject", "scrollDirection"]
+- ["CSo8NSObject", "setupLayout"]
+- ["CSo8NSObject", "targetContentOffset"]
+- !private ["PSo16NSObjectProtocol", "CGSize"]
+- !private ["PSo16NSObjectProtocol", "collectionView"]
+- !private ["PSo16NSObjectProtocol", "contentOffset"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "itemHeight"]
+- ["PSo16NSObjectProtocol", "itemSize"]
+- ["PSo16NSObjectProtocol", "itemWidth"]
+- !private ["PSo16NSObjectProtocol", "minimumInteritemSpacing"]
+- !private ["PSo16NSObjectProtocol", "minimumLineSpacing"]
+- !private ["PSo16NSObjectProtocol", "scrollDirection"]
+- ["PSo16NSObjectProtocol", "setupLayout"]
+- ["PSo16NSObjectProtocol", "targetContentOffset"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "horizontal"]
+- !private ["PSo29UIAccessibilityIdentification", "contentOffset"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo12UIAppearance", "contentOffset"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo21UIAppearanceContainer", "contentOffset"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["CSo16UICollectionView", "contentOffset"]
+- ["CSo16UICollectionView", "deinit"]
+- !private ["CSo16UICollectionView", "frame"]
+- ["CSo26UICollectionViewFlowLayout", "CGFloat"]
+- ["CSo26UICollectionViewFlowLayout", "CGPoint"]
+- ["CSo26UICollectionViewFlowLayout", "CGSize"]
+- ["CSo26UICollectionViewFlowLayout", "NSCoder"]
+- !private ["CSo26UICollectionViewFlowLayout", "collectionView"]
+- ["CSo26UICollectionViewFlowLayout", "deinit"]
+- ["CSo26UICollectionViewFlowLayout", "init"]
+- ["CSo26UICollectionViewFlowLayout", "itemHeight"]
+- ["CSo26UICollectionViewFlowLayout", "itemSize"]
+- ["CSo26UICollectionViewFlowLayout", "itemWidth"]
+- !private ["CSo26UICollectionViewFlowLayout", "minimumInteritemSpacing"]
+- !private ["CSo26UICollectionViewFlowLayout", "minimumLineSpacing"]
+- !private ["CSo26UICollectionViewFlowLayout", "scrollDirection"]
+- ["CSo26UICollectionViewFlowLayout", "setupLayout"]
+- ["CSo26UICollectionViewFlowLayout", "targetContentOffset"]
+- ["CSo26UICollectionViewFlowLayout", ""]
+- ["CSo22UICollectionViewLayout", "CGFloat"]
+- ["CSo22UICollectionViewLayout", "CGPoint"]
+- ["CSo22UICollectionViewLayout", "CGSize"]
+- ["CSo22UICollectionViewLayout", "NSCoder"]
+- !private ["CSo22UICollectionViewLayout", "collectionView"]
+- ["CSo22UICollectionViewLayout", "init"]
+- ["CSo22UICollectionViewLayout", "itemHeight"]
+- ["CSo22UICollectionViewLayout", "itemSize"]
+- ["CSo22UICollectionViewLayout", "itemWidth"]
+- !private ["CSo22UICollectionViewLayout", "minimumInteritemSpacing"]
+- !private ["CSo22UICollectionViewLayout", "minimumLineSpacing"]
+- !private ["CSo22UICollectionViewLayout", "scrollDirection"]
+- ["CSo22UICollectionViewLayout", "setupLayout"]
+- ["CSo22UICollectionViewLayout", "targetContentOffset"]
+- ["OSC31UICollectionViewScrollDirection", "deinit"]
+- !private ["OSC31UICollectionViewScrollDirection", "horizontal"]
+- !private ["PSo17UICoordinateSpace", "contentOffset"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo13UIDynamicItem", "contentOffset"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo18UIFocusEnvironment", "contentOffset"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- !private ["PSo11UIFocusItem", "contentOffset"]
+- !private ["PSo11UIFocusItem", "frame"]
+- !private ["CSo11UIResponder", "contentOffset"]
+- !private ["CSo11UIResponder", "frame"]
+- !private ["PSo30UIResponderStandardEditActions", "contentOffset"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- !private ["CSo12UIScrollView", "contentOffset"]
+- !private ["CSo12UIScrollView", "frame"]
+- !private ["PSo18UITraitEnvironment", "contentOffset"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["CSo6UIView", "contentOffset"]
+- !private ["CSo6UIView", "frame"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentOffset"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- !private ["Ps9_Hashable", "CGSize"]
+- !private ["Ps9_Hashable", "collectionView"]
+- !private ["Ps9_Hashable", "contentOffset"]
+- !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "horizontal"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "itemHeight"]
+- ["Ps9_Hashable", "itemSize"]
+- ["Ps9_Hashable", "itemWidth"]
+- !private ["Ps9_Hashable", "minimumInteritemSpacing"]
+- !private ["Ps9_Hashable", "minimumLineSpacing"]
+- !private ["Ps9_Hashable", "scrollDirection"]
+- ["Ps9_Hashable", "setupLayout"]
+- ["Ps9_Hashable", "targetContentOffset"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- ["C11FoodTracker18oneItemsFlowLayout", "CGFloat"]
+- ["C11FoodTracker18oneItemsFlowLayout", "CGPoint"]
+- ["C11FoodTracker18oneItemsFlowLayout", "CGSize"]
+- ["C11FoodTracker18oneItemsFlowLayout", "NSCoder"]
+- !private ["C11FoodTracker18oneItemsFlowLayout", "collectionView"]
+- ["C11FoodTracker18oneItemsFlowLayout", "deinit"]
+- ["C11FoodTracker18oneItemsFlowLayout", "init"]
+- ["C11FoodTracker18oneItemsFlowLayout", "itemHeight"]
+- ["C11FoodTracker18oneItemsFlowLayout", "itemSize"]
+- ["C11FoodTracker18oneItemsFlowLayout", "itemWidth"]
+- !private ["C11FoodTracker18oneItemsFlowLayout", "minimumInteritemSpacing"]
+- !private ["C11FoodTracker18oneItemsFlowLayout", "minimumLineSpacing"]
+- !private ["C11FoodTracker18oneItemsFlowLayout", "scrollDirection"]
+- ["C11FoodTracker18oneItemsFlowLayout", "setupLayout"]
+- ["C11FoodTracker18oneItemsFlowLayout", "targetContentOffset"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "VSC6CGSize"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- "CSo16UICollectionView"
+- "CSo26UICollectionViewFlowLayout"
+- "CSo22UICollectionViewLayout"
+- "OSC31UICollectionViewScrollDirection"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- "C11FoodTracker18oneItemsFlowLayout"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+interface-hash: "43e61e7b0dd2efddedeb9322de0536ab"

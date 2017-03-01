@@ -121,10 +121,14 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             cell.photoImageView.image = AImage
         }
         
+        //日付
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        
         //評価
         var ratingDic = cafeArray[indexPath.row] as! NSDictionary
         cell.ratingControl.rating = Int(cafeDic["rating"] as! NSNumber)
-        
+        cell.dateView.text = formatter.string(from: cafeDic["date"] as! Date)
         
         return cell
     }
@@ -174,6 +178,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

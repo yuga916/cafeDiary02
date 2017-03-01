@@ -15,6 +15,7 @@
 		820B4C1D1E565B6100C796DD /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820B4C1C1E565B6100C796DD /* imageViewController.swift */; };
 		820B4C1F1E5686E000C796DD /* listViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820B4C1E1E5686E000C796DD /* listViewController.swift */; };
 		820B4C211E5697E000C796DD /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820B4C201E5697E000C796DD /* FontAwesome_swift.framework */; };
+		82151A651E65164600BB0F3A /* oneItemsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82151A641E65164600BB0F3A /* oneItemsFlowLayout.swift */; };
 		826EB3631E4B2C9300568C8B /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3621E4B2C9300568C8B /* DateManager.swift */; };
 		826EB3651E4B2CC600568C8B /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3641E4B2CC600568C8B /* CalendarCell.swift */; };
 		826EB3671E4B2FFA00568C8B /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3661E4B2FFA00568C8B /* calendarViewController.swift */; };
@@ -51,6 +52,7 @@
 		820B4C1C1E565B6100C796DD /* imageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
 		820B4C1E1E5686E000C796DD /* listViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listViewController.swift; sourceTree = "<group>"; };
 		820B4C201E5697E000C796DD /* FontAwesome_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome_swift.framework; path = "Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework"; sourceTree = "<group>"; };
+		82151A641E65164600BB0F3A /* oneItemsFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = oneItemsFlowLayout.swift; sourceTree = "<group>"; };
 		826EB3621E4B2C9300568C8B /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		826EB3641E4B2CC600568C8B /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		826EB3661E4B2FFA00568C8B /* calendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				820B4C1A1E55C6CF00C796DD /* imageCollectionViewCell.swift */,
 				820B4C1C1E565B6100C796DD /* imageViewController.swift */,
 				820B4C1E1E5686E000C796DD /* listViewController.swift */,
+				82151A641E65164600BB0F3A /* oneItemsFlowLayout.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				826EB3671E4B2FFA00568C8B /* calendarViewController.swift in Sources */,
 				826EB3651E4B2CC600568C8B /* CalendarCell.swift in Sources */,
 				820A28941E54000C00692080 /* Diary+CoreDataProperties.swift in Sources */,
+				82151A651E65164600BB0F3A /* oneItemsFlowLayout.swift in Sources */,
 				820A288C1E53E9B200692080 /* Model.xcdatamodeld in Sources */,
 				820A28931E54000C00692080 /* Diary+CoreDataClass.swift in Sources */,
 			);

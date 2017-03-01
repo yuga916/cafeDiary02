@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker17MealTableViewCell", ""]
 provides-dynamic-lookup:
-- "photoImageView"
 - "awakeFromNib"
-- "nameLabel"
+- "photoImageView"
 - "setSelected"
-- "ratingControl"
 - "dateView"
+- "ratingControl"
+- "nameLabel"
 depends-top-level:
 - "UITableViewCell"
-- "RatingControl"
-- "MealTableViewCell"
-- "UIImageView"
 - "UILabel"
+- "RatingControl"
+- "UIImageView"
 - "Bool"
+- "MealTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "dateView"]

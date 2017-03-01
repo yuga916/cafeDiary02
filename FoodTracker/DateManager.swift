@@ -68,6 +68,7 @@ class DateManager: NSObject {
             dateComponents.day = i - (ordinalityOfFirstDay! - 1)
             // ③ 表示する月の初日から②で計算した差を引いた日付を取得
              let date = Calendar.current.date(byAdding: dateComponents as DateComponents, to: firstDateOfMonth() as Date)!            // ④配列に追加
+            
             currentMonthOfDates.append(date as NSDate)
         }
     }

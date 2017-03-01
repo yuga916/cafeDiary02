@@ -8,14 +8,14 @@ provides-member:
 - ["O17FontAwesome_swift11FontAwesome", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "Dictionary"
 - "StringLiteralType"
-- "FontAwesomeIcons"
 - "UnicodeScalarType"
-- "FontAwesome"
+- "String"
+- "FontAwesomeIcons"
 - "=="
 - !private "~="
+- "Dictionary"
+- "FontAwesome"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

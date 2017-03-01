@@ -10,18 +10,18 @@ provides-member:
 - ["C11FoodTracker5Diary", "rating"]
 - ["C11FoodTracker5Diary", "studyTime"]
 provides-dynamic-lookup:
-- "rating"
 - "date"
 - "coffeeName"
-- "studyTime"
+- "rating"
 - "img"
+- "studyTime"
 depends-top-level:
-- "Int16"
-- "NSDate"
 - !private "StringLiteralType"
 - "String"
-- "Diary"
+- "Int16"
 - "NSFetchRequest"
+- "Diary"
+- "NSDate"
 depends-member:
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - ["Ps9AnyObject", "coffeeName"]

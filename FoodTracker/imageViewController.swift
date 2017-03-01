@@ -10,18 +10,20 @@ import UIKit
 import CoreData
 import Photos
 
-class imageViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class imageViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     var cafeArray: [NSDictionary] = []
     var cafeDic: NSDictionary! = [:]
     var myCafe = NSArray() as! [String]
     var count = 0
+    let oneFlowLayout = oneItemsFlowLayout()
     
     @IBOutlet weak var imageCollection: UICollectionView!
     
+//    let oneFlowLayout = oneItemsFlowLayout()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         read()
     }
 
@@ -134,10 +136,47 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let width: CGFloat = view.frame.width / 3 - 2
+        let width: CGFloat = view.frame.width / 2 - 2
         let height: CGFloat = width
         return CGSize(width: width, height: height)
     }
+    
+    
+    //Viewを切り替える
+    private func changeView(flowLayout: UICollectionViewFlowLayout) {
+        
+        UIView.animate(withDuration: 0.5) { [weak self] () -> Void in
+            
+            self?.imageCollection.collectionViewLayout.invalidateLayout()
+            self?.imageCollection.setCollectionViewLayout(flowLayout, animated: true)
+            self?.imageCollection.layoutIfNeeded()
+        }
+        
+    }
+    
+    // Cell が選択された場合
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("タップされたよ")
+        changeView(flowLayout: oneFlowLayout)
+//        self.changeView(flowLayout: oneFlowLayout)
+//        // [indexPath.row] から画像名を探し、UImage を設定
+//        selectedImage = UIImage(named: photos[(indexPath as NSIndexPath).row])
+//        if selectedImage != nil {
+//            // SubViewController へ遷移するために Segue を呼び出す
+//            performSegue(withIdentifier: "toSubViewController",sender: nil)
+//        }
+        
+    }
+    
+//    // Segue 準備
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+//        if (segue.identifier == "toSubViewController") {
+//            let subVC: SubViewController = (segue.destination as? SubViewController)!
+//            // SubViewController のselectedImgに選択された画像を設定する
+//            subVC.selectedImg = selectedImage
+//        }
+//    }
+    
 
     /*
     // MARK: - Navigation

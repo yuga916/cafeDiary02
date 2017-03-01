@@ -35,7 +35,8 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     var selectedDate = NSDate()
     var today: NSDate!
     let weekArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    
+    let baseView:UIView = UIView(frame: CGRect(x:0,y:720,width:200,height:250))
+
     
     @IBOutlet weak var cafeLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -52,6 +53,9 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     @IBOutlet weak var coffeeFont: UILabel!
     @IBOutlet weak var timeFont: UILabel!
     @IBOutlet weak var hLabel: UILabel!
+    @IBOutlet weak var noImage: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,8 +113,6 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         editButton.setTitle(String.fontAwesomeIcon(name: .edit), for: .normal)
         
         read()
-        
-        
     }
     
     //既に存在するデータの読み込み処理
@@ -163,6 +165,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 coffeeFont.isHidden = false
                 timeFont.isHidden = false
                 hLabel.isHidden = false
+                noImage.isHidden = true
                 cafeLabel.text = "\(coffeeName!)"
                 timeLabel.text = "\(studyTime)"
                 ratingControl.rating = rating as! Int
@@ -192,6 +195,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 coffeeFont.isHidden = true
                 timeFont.isHidden = true
                 hLabel.isHidden = true
+                noImage.isHidden = false
             }
         } catch {
         }
@@ -224,6 +228,8 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     //3
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! CalendarCell
+        
+        
         //テキストカラー
         if (indexPath.row % 7 == 0) {
             cell.textLabel.textColor = UIColor.lightRed()
@@ -236,9 +242,36 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         if indexPath.section == 0 {
             cell.textLabel.text = weekArray[indexPath.row]
             cell.backgroundColor = UIColor.clear
+            cell.isUserInteractionEnabled = false
+            
         } else {
-            cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
-            cell.backgroundColor = UIColor(red: 0.0, green: 0.392, blue: 0.0, alpha: 1.0)
+            print(indexPath.row)
+            print(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))
+            if Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! >= 30 {
+                
+                cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+                cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
+                cell.isUserInteractionEnabled = true
+            
+            } else if Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! == 1 || Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! == 0 {
+                
+                cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+                cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
+                cell.isUserInteractionEnabled = true
+                
+            } else if (indexPath.row > Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))!) {
+                
+                cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+                cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
+                cell.isUserInteractionEnabled = true
+                
+            } else {
+                
+                cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+                cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
+                cell.isUserInteractionEnabled = true
+            }
+            
             //月によって1日の場所は異なる(後ほど説明します)
         }
         
@@ -253,13 +286,27 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     }
     
     //セルのサイズを設定
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+                let numberOfMargin: CGFloat = 8.0
+        
+                let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
+//                let height: CGFloat = width * 1.0
+                let height: CGFloat = (collectionView.frame.size.height - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
+                return CGSize(width:width, height:height)
+
+    }
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let numberOfMargin: CGFloat = 8.0
-        let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
-        let height: CGFloat = width * 1.0
-        return CGSize(width:width, height:height)
+//        let numberOfMargin: CGFloat = 8.0
+//        let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
+//        let height: CGFloat = width * 1.0
+//        return CGSize(width:width, height:height)
+        let width: CGFloat = view.frame.width / 7 - 6
+        let height: CGFloat = view.frame.height
+        return CGSize(width: width, height: height)
         
     }
+
     
     //セルの垂直方向のマージンを設定
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {

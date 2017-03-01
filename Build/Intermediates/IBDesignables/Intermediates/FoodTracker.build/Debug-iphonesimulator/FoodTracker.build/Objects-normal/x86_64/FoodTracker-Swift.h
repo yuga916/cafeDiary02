@@ -300,6 +300,7 @@ SWIFT_CLASS("_TtC11FoodTracker13RatingControl")
 + (UIColor * _Nonnull)lightRed;
 @end
 
+@class UIView;
 @class UICollectionView;
 @class UICollectionViewLayout;
 @class UINavigationItem;
@@ -315,6 +316,7 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, strong) NSDate * _Nonnull selectedDate;
 @property (nonatomic, strong) NSDate * _Null_unspecified today;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull weekArray;
+@property (nonatomic, readonly, strong) UIView * _Nonnull baseView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cafeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
 @property (nonatomic, weak) IBOutlet RatingControl * _Null_unspecified ratingControl;
@@ -327,6 +329,7 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified coffeeFont;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeFont;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified noImage;
 - (void)viewDidLoad;
 - (void)read;
 - (void)viewWillAppear:(BOOL)animated;
@@ -354,22 +357,25 @@ SWIFT_CLASS("_TtC11FoodTracker23imageCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class oneItemsFlowLayout;
 
 SWIFT_CLASS("_TtC11FoodTracker19imageViewController")
-@interface imageViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+@interface imageViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 @property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
 @property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
 @property (nonatomic) NSInteger count;
+@property (nonatomic, readonly, strong) oneItemsFlowLayout * _Nonnull oneFlowLayout;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified imageCollection;
 - (void)viewDidLoad;
 - (void)read;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAt:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (void)didReceiveMemoryWarning;
 - (CGSize)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -396,6 +402,18 @@ SWIFT_CLASS("_TtC11FoodTracker18listViewController")
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11FoodTracker18oneItemsFlowLayout")
+@interface oneItemsFlowLayout : UICollectionViewFlowLayout
+@property (nonatomic) CGSize itemSize;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setupLayout;
+- (CGFloat)itemWidth;
+- (CGFloat)itemHeight;
+- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset;
 @end
 
 #pragma clang diagnostic pop

@@ -1,7 +1,0 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "30e41a9331f46e18352cf708c608b260"
-build_time: [541478637, 799837000]
-inputs:
-  "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/FontAwesome.swift/FontAwesome/Enum.swift": [540820626, 0]
-  "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/FontAwesome.swift/FontAwesome/FontAwesome.swift": [540820626, 0]
-  "/Users/yuga/Documents/ios20161219/cafeDaiay-b1b70009d201388525eea8414f389516ed31bc4a/FoodTracker/Pods/FontAwesome.swift/FontAwesome/FontAwesomeView.swift": [540820626, 0]
