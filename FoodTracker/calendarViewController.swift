@@ -165,7 +165,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 coffeeFont.isHidden = false
                 timeFont.isHidden = false
                 hLabel.isHidden = false
-                noImage.isHidden = true
+//                noImage.isHidden = true
                 cafeLabel.text = "\(coffeeName!)"
                 timeLabel.text = "\(studyTime)"
                 ratingControl.rating = rating as! Int
@@ -195,7 +195,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 coffeeFont.isHidden = true
                 timeFont.isHidden = true
                 hLabel.isHidden = true
-                noImage.isHidden = false
+//                noImage.isHidden = false
             }
         } catch {
         }
@@ -291,7 +291,9 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         
                 let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
 //                let height: CGFloat = width * 1.0
-                let height: CGFloat = (collectionView.frame.size.height - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
+                let height: CGFloat = (collectionView.frame.size.height - cellMargin * numberOfMargin) / CGFloat(8.5)
+//                let height: CGFloat = 35.0
+        
                 return CGSize(width:width, height:height)
 
     }
